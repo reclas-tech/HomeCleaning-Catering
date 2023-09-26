@@ -8,20 +8,23 @@
                 'No' => '1'
 ],
 [
-                'id' => '1',
+                'id' => '2',
                 'Nama' => 'Rizky',
                 'No' => '1'
 ],
 [
-                'id' => '1',
+                'id' => '2',
                 'Nama' => 'Rizky',
                 'No' => '1'
 ],
         ]
     ]
 ?>
-
-<div class="relative overflow-x-auto">
+<div class="flex justify-end my-2">
+    <x-cmsSearch/>
+    <x-cmsButton ref="#" color="#FA8F21" width="32" title="+Add Data" extendClass="ms-2 me-4 text-white"/> 
+</div>
+<div class="relative overflow-x-auto"> 
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase">
             <tr class="border-b-2 border-black">
@@ -47,18 +50,18 @@
                 </tr>
             @else
                 @for ($i = 0; $i < sizeof($test['Data']); $i++)
-                <tr class="bg-white border-b">
-                <td class="px-6 py-4">
+                <tr class="bg-white border-b-2 border-black">
+                <td class="px-6 py-4 text-gray-700 font-bold">
                     {{$i+1}}
                 </td>
                         @foreach($test['Data'][$i] as $key => $value)
                             @if ($key !== $exception)
-                            <td class="px-6 py-4">
+                            <td class="px-6 py-4 text-gray-700 font-semibold">
                                 {{$value}}
                             </td>
                             @endif
                         @endforeach
-                        <td class="px-1 py-2">
+                        <td class="px-1 py-2 w-48">
                             <a href="/cms/edit/{{$test['Data'][$i]['id']}}" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-3 py-2.5 dark:focus:ring-yellow-900">Edit</a>
                             <a href="/cms/edit/{{$test['Data'][$i]['id']}}" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Delete</a>
                         </td>

@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/cmsDashboard', function () {
+    return view('cmsDashboard');
+});
+Route::get('/cmsCatering', function () {
+    return view('cmsCatering');
 });

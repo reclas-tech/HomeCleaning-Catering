@@ -28,12 +28,16 @@ Route::get('/cmsCateringPacketEdit', function () {
     return view('cmsCateringPacketEdit');
 });
 
-Route::get('/cmsCateringProduct', function () {
-    return view('cmsCateringProduct');
+Route::get('/cmsCateringPhoto', function () {
+    return view('cmsCateringPhoto');
 });
 
-Route::get('/cmsCateringProductAdd', function () {
-    return view('cmsCateringProductAdd');
+Route::get('/cmsCateringPhotoAdd', function () {
+    return view('cmsCateringPhotoAdd');
+});
+
+Route::get('/cmsCateringPhotoEdit', function () {
+    return view('cmsCateringPhotoEdit');
 });
 
 Route::get('/loginPage', function () {

@@ -3,7 +3,7 @@
     <div class="mt-6">
       <div class="flex justify-center">
         <x-cmsDashboardGroup show="2" title="Home Cleaning" button1="Service" ref1="#" button2="Organigram" ref2="#" img="cleaningLogo"/>
-        <x-cmsDashboardGroup show="2" title="Catering" button1="Packet" ref1="#" button2="Photo Gallery" ref2="#" img="cateringLogo"/>
+        <x-cmsDashboardGroup show="2" title="Catering" button1="Packet" ref1="/cmsCateringPacket" button2="Photo Gallery" ref2="cmsCateringPhoto" img="cateringLogo"/>
       </div>
       <div class="flex justify-center">
         <x-cmsDashboardGroup show="1" title="Company" button1="Working Company" ref1="#" img="companyLogo"/>

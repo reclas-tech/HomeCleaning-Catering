@@ -760,7 +760,7 @@
                         <div class="text-white text-base">Forgot password</div>
                     </a>
                 </div>
-                <button type="button"
+                <button type="button" id="signIn"
                     class="w-full h-[52px] text-base text-white bg-[#FA8F21] hover:bg-[#D87815] focus:ring-4 focus:ring-blue-300 px-5 py-2.5 mr-2 mb-2 dark:bg-[#FA8F21] dark:hover:bg-[#D87815] rounded transition duration-300"
                     onclick="handleSignIn()">Sign In</button>
             </div>
@@ -770,7 +770,14 @@
     <!-- Custom Modal Container -->
     <div id="modalContainer"></div>
     <img src={asset=({path})} alt="">
-    <script></script>
+    <script>
+        const signIn = document.getElementById("signIn");
+
+        signIn.addEventListener("click", () => {
+            window.location.href = "cmsDashboard";
+        });
+
+    </script>
 </body>
 
 </html>

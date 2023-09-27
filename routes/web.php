@@ -16,16 +16,24 @@ use Illuminate\Support\Facades\Route;
 Route::get('/cmsDashboard', function () {
     return view('cmsDashboard');
 });
-Route::get('/cmsCatering', function () {
-    return view('cmsCatering');
+Route::get('/cmsCateringPacket', function () {
+    return view('cmsCateringPacket');
 });
 
-Route::get('/cmsCateringAdd', function () {
-    return view('cmsCateringAdd');
+Route::get('/cmsCateringPacketAdd', function () {
+    return view('cmsCateringPacketAdd');
 });
 
-Route::get('/cmsCateringEdit', function () {
-    return view('cmsCateringEdit');
+Route::get('/cmsCateringPacketEdit', function () {
+    return view('cmsCateringPacketEdit');
+});
+
+Route::get('/cmsCateringProduct', function () {
+    return view('cmsCateringProduct');
+});
+
+Route::get('/cmsCateringProductAdd', function () {
+    return view('cmsCateringProductAdd');
 });
 
 Route::get('/loginPage', function () {

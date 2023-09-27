@@ -22,7 +22,7 @@
 ?>
 <div class="flex justify-end my-2">
     <x-cmsSearch/>
-    <x-cmsButton ref="#" color="#FA8F21" width="32" title="+Add Data" extendClass="ms-2 me-4 text-white"/> 
+    <x-cmsButton ref="{{$addRef}}" color="#FA8F21" width="32" title="+Add Data" extendClass="ms-2 me-4 text-white"/> 
 </div>
 <div class="relative overflow-x-auto"> 
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">

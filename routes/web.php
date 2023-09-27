@@ -40,6 +40,18 @@ Route::get('/cmsCateringPhotoEdit', function () {
     return view('cmsCateringPhotoEdit');
 });
 
+Route::get('/cmsOrganigram', function () {
+    return view('cmsOrganigram');
+});
+
+Route::get('/cmsOrganigramAdd', function () {
+    return view('cmsOrganigramAdd');
+});
+
+Route::get('/cmsOrganigramEdit', function () {
+    return view('cmsOrganigramEdit');
+});
+
 Route::get('/loginPage', function () {
     return view('loginPage');
 });

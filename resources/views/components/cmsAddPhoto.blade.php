@@ -1,5 +1,5 @@
-    <p class="ml-[300px] text-[24px] font-semibold mt-[13%]">{{$title}}</p>
-    <div class="ml-[300px] mr-[70px] flex justify-between">
+    <p class="text-xl font-semibold">{{$title}}</p>
+    <div class="flex justify-between">
         <div class="flex">
             <div class="inline-block text-left bg-white w-72 relative rounded-md">
                 <input type="file" id="imageUpload" name="imageFile" class="absolute opacity-0 cursor-pointer">
@@ -19,5 +19,4 @@
                     imageStatus.innerText = "No photo.";
                 }
             });
-
         </script>

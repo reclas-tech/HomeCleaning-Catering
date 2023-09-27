@@ -39,8 +39,7 @@
             <p class="ml-[300px] mt-[25px] text-3xl font-semibold">Add Home Cleaning Services</p>
             <x-cmsInputBox label="Company Name" title="Add Company Name" />
     </div>
-    <x-cmsAddPhoto title="Add Photo" subTitle="Add
-                    Photo" desk="No photo." />
+    <x-cmsAddPhoto title="Add Photo" subTitle="AddPhoto" desk="No photo." />
     <x-cmsButtonSave />
     </slot>
     </div>

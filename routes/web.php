@@ -20,6 +20,14 @@ Route::get('/cmsCatering', function () {
     return view('cmsCatering');
 });
 
+Route::get('/cmsCateringAdd', function () {
+    return view('cmsCateringAdd');
+});
+
+Route::get('/cmsCateringEdit', function () {
+    return view('cmsCateringEdit');
+});
+
 Route::get('/loginPage', function () {
     return view('loginPage');
 });

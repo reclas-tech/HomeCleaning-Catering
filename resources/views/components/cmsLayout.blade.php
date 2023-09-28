@@ -19,7 +19,7 @@
     }
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 <body>
     <x-side-bar/>

@@ -23,7 +23,7 @@
                 </li>
                 <li>
                     <x-cmsButtonGroup show="1" head="Company" title1="Working Companies" ref1="cmsWorkingCompanies"
-                        color1="#95BEFE" width="100" extendClass="text-white hover:bg-[#0062D1]" />
+                        color1="{{request()->is(['cmsWorkingCompanies', 'cmsWorkingCompaniesAddContent', 'cmsWorkingCompaniesEditContent']) ? '#0062D1' : '#95BEFE'}}" width="100" extendClass="text-white hover:bg-[#0062D1]" />
                 </li>
                 <li>
                     <x-cmsButtonGroup show="2" head="Catering" title1="Packet" title2="Photo Gallery"
@@ -34,7 +34,7 @@
                 </li>
                 <li>
                     <x-cmsButtonGroup show="2" head="Home Cleaning" title1="Service" title2="Organigram"
-                        ref1="cmsServices" ref2="cmsOrganigram" color1="#95BEFE"
+                        ref1="cmsServices" ref2="cmsOrganigram" color1="{{request()->is(['cmsServices', 'cmsServicesAddContent', 'cmsServicesEditContent']) ? '#0062D1' : '#95BEFE'}}"
                         color2="{{request()->is(['cmsOrganigram', 'cmsOrganigramAdd', 'cmsOrganigramEdit']) ? '#0062D1' : '#95BEFE'}}"
                         width="100" extendClass="text-white hover:bg-[#0062D1]" />
                 </li>

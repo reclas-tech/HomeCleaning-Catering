@@ -10,7 +10,7 @@
           <span class="self-center lg:text-2xl sm:text-s font-semibold whitespace-nowrap dark:text-white">Nama Perusahaan</span>
       </a>
       <div class="flex lg:py-2 lg:px-5">
-        <img class="" src={{ asset('storage/cmsAssets/defaultAvatar.svg') }} alt="">
+        <img class="" src={{ asset('assets/cmsAssets/defaultAvatar.svg') }} alt="">
         <p class="ms-3 text-white text-m sm:text-s font-semibold">Welcome,<br> Admin</p>
       </div>
     </div>

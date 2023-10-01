@@ -25,9 +25,9 @@
     <x-side-bar/>
     <div class="sm:ml-64">
         <x-navbarCms/>
-    </div>
-    <div class="">
-      <slot/>
+        <div class="p-4 mx-4">
+          {{ $slot }}
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 </body>

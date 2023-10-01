@@ -1,71 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdn.tailwindcss.com"></script>
+<x-cmsLayout>
+    <x-alertInputRequired />
+    <x-alertDataEnteredSuccessfully />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        cmsSidebarPrimary: '#2186FF',
-                        cmsNavbarPrimary: '#0062D1',
-                    }
-                }
-            }
-        }
-
-    </script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
-    <title>Add Content</title>
-    <style>
-        .transparent-icon {
-            opacity: 0;
-        }
-
-    </style>
-</head>
-
-<body>
-    <x-side-bar />
-    <div class="sm:ml-64">
-        <x-navbarCms />
-    </div>
-    <div class="">
-        <slot>
-            <p class="ml-[300px] mt-[25px] text-3xl font-semibold">Add Home Cleaning Services</p>
-            <x-cmsInputBox label="Company Name" title="Add Company Name" />
-    </div>
-    <x-cmsAddPhoto title="Add Photo" subTitle="AddPhoto" desk="No photo." />
-    <x-cmsButtonSave />
-    </slot>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
-
-    <script>
-        // handle Form Add
-        function handleAdd() {
-            var name = document.getElementById("name");
-            var description = document.getElementById("description");
-            var imageUpload = document.getElementById("imageUpload");
-            var name = name.value;
-            var description = description.value;
+        // handle Form submission
+        function handleSignIn() {
+            var servicesName = document.getElementById("servicesName");
+            var imageUpload = document.getElementById(
+                "imageUpload");
+            var desk = document.getElementById("desk")
+            var servicesName = servicesName.value;
             var imageUpload = imageUpload.value;
-            if (name !== "" && imageUpload === "" && description === "") {
-                console.log("testtt")
+            var desk = desk.value;
+
+            if (servicesName === "" || imageUpload === "" || desk === "") {
+                alertInputRequired();
                 return;
             }
-            console.log("Name:", name);
-            console.log("description:", description);
-            console.log("imageUpload:", imageUpload);
+
+            if (servicesName !== "" && imageUpload !== "" && desk !== "") {
+                alertDataEnteredSuccessfully();
+                return;
+            }
+
+            console.log("Services Name:", servicesName);
+            console.log("Desk Value:", desk);
+            console.log("Image Value:", imageUpload);
         }
 
     </script>
-
-
-</body>
-
-</html>
+    <h1 class="text-3xl font-semibold mt-2 mb-8">Add Home Cleaning Services</h1>
+    <x-cmsInputBox label="Service Name" title="Add Service Name" id="servicesName" value="" />
+    <x-cmsTextArea label="Description" title="Add Description" id="desk" value="" />
+    <div class="flex place-content-between items-end">
+        <x-cmsAddPhoto title="Add Photo" subTitle="AddPhoto" desk="No photo." />
+        <x-cmsButtonSave />
+    </div>
+    <!-- Custom Modal Container -->
+    <div id="modalContainer"></div>
+</x-cmsLayout>

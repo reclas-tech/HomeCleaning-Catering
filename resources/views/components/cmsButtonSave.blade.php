@@ -1,4 +1,4 @@
-<button>
+<button onclick="handleSignIn()" id="workingCompanies">
     <div class="w-[158px] h-[40px] py-2 rounded-md bg-[#0062D1] text-white text-center text-[14px] hover:bg-[#0062D1]">
         Save
     </div>
@@ -16,3 +16,12 @@
         }
     });
 </script> --}}
+
+<!-- <script>
+    const workingCompanies = document.getElementById("workingCompanies");
+
+    workingCompanies.addEventListener("click", () => {
+        window.location.href = "cmsWorkingCompanies";
+    });
+
+</script> -->

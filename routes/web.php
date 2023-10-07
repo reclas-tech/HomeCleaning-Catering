@@ -24,7 +24,7 @@ Route::get('/cmsCateringPacketAdd', function () {
     return view('cmsCateringPacketAdd');
 });
 
-Route::get('/cmsCateringPacketEdit', function () {
+Route::get('/cmsCateringPacket/edit', function () {
     return view('cmsCateringPacketEdit');
 });
 
@@ -36,7 +36,7 @@ Route::get('/cmsCateringPhotoAdd', function () {
     return view('cmsCateringPhotoAdd');
 });
 
-Route::get('/cmsCateringPhotoEdit', function () {
+Route::get('/cmsCateringPhoto/edit', function () {
     return view('cmsCateringPhotoEdit');
 });
 
@@ -48,7 +48,7 @@ Route::get('/cmsOrganigramAdd', function () {
     return view('cmsOrganigramAdd');
 });
 
-Route::get('/cmsOrganigramEdit', function () {
+Route::get('/cmsOrganigram/edit', function () {
     return view('cmsOrganigramEdit');
 });
 
@@ -75,7 +75,7 @@ Route::get('/cmsWorkingCompanies', function () {
 Route::get('/cmsWorkingCompaniesAddContent', function () {
     return view('cmsWorkingCompaniesAddContent');
 });
-Route::get('/cmsWorkingCompaniesEditContent', function () {
+Route::get('/cmsWorkingCompanies/edit', function () {
     return view('cmsWorkingCompaniesEditContent');
 });
 

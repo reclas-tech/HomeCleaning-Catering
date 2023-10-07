@@ -17,6 +17,41 @@
                 'Nama' => 'Rizky',
                 'No' => '1'
 ],
+[
+                'id' => '1',
+                'Nama' => 'Rizky',
+                'No' => '1'
+],
+[
+                'id' => '2',
+                'Nama' => 'Rizky',
+                'No' => '1'
+],
+[
+                'id' => '2',
+                'Nama' => 'Rizky',
+                'No' => '1'
+],
+[
+                'id' => '1',
+                'Nama' => 'Rizky',
+                'No' => '1'
+],
+[
+                'id' => '2',
+                'Nama' => 'Rizky',
+                'No' => '1'
+],
+[
+                'id' => '2',
+                'Nama' => 'Rizky',
+                'No' => '1'
+],
+[
+                'id' => '2',
+                'Nama' => 'Rizky',
+                'No' => '1'
+],
         ]
     ]
 ?>
@@ -62,12 +97,55 @@
                             @endif
                         @endforeach
                         <td class="px-1 py-2 w-48">
-                            <a href="/edit" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-3 py-2.5 dark:focus:ring-yellow-900">Edit</a>
-                            <a href="/delete/{{$test['Data'][$i]['id']}}" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Delete</a>
+                            <a href="edit" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-3 py-2.5 dark:focus:ring-yellow-900">Edit</a>
+                            <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Delete</button>
                         </td>
                 </tr>
                 @endfor
             @endif
         </tbody>
     </table>
+    <div class="flex justify-center my-2">
+        <nav aria-label="Page navigation example">
+            <ul class="inline-flex -space-x-px text-sm">
+              <li>
+                <a href="#" class="flex items-center justify-center px-3 h-8 ml-0 leading-tight"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                    <path d="M11 1L2 6.5L11 12" stroke="#FA8F21" stroke-width="2"/>
+                    </svg></a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight font-semibold">1</a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-center px-3 h-8 ml-0 leading-tight"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                    <path d="M1 1L12 6.61441L1 12.2288" stroke="#FA8F21" stroke-width="2"/>
+                    </svg></a>
+              </li>
+            </ul>
+          </nav>
+    </div>
 </div>
+<div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-2 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative w-full max-w-md max-h-full">
+        <div class="relative bg-white rounded-lg shadow w-[28rem]">
+            <div class="p-3 text-center">
+                <div class="flex justify-between items-center mb-5 px-4">
+                    <div class="flex justify-center items-center">
+                        <img src={{ asset('assets/tampilanAssets/trashLogo.svg') }} alt="">
+                        <h3 class="ms-3 text-lg font-semibold">Are you sure to delete this data?</h3>
+                    </div>
+                    <button type="button" data-modal-hide="popup-modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                            <path d="M15.0001 1.70689L14.0094 0.716339L7.50004 7.22574L0.990643 0.716339L0 1.70689L6.50945 8.21634L0 14.7258L0.990643 15.7163L7.50004 9.20694L14.0094 15.7163L15.0001 14.7258L8.49064 8.21634L15.0001 1.70689Z" fill="#404040"/>
+                        </svg>
+                    </button>
+                </div>
+                <button data-modal-hide="popup-modal" type="button" class="text-white bg-[#FF473E] font-medium rounded-lg text-sm inline-flex items-center px-10 py-2 text-center mr-2">
+                    YES
+                </button>
+                <button data-modal-hide="popup-modal" type="button" class="text-white bg-[#1B62B8] font-medium rounded-lg text-sm inline-flex items-center px-10 py-2 text-center mr-2">NO</button>
+            </div>
+        </div>
+    </div>
+</div>
+  

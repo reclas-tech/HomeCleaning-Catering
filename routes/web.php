@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('tampilanLandingPage');
+});
+
 Route::get('/cmsDashboard', function () {
     return view('cmsDashboard');
 });

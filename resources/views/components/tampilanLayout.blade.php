@@ -23,10 +23,9 @@
 </head>
 <body>
     <div class="relative">
-        {{-- <div class="fixed"> --}}
-            <x-navbarTampilan/>
-        {{-- </div> --}}
+        <x-navbarTampilan/>
         {{ $slot }}
+        <x-footerTampilan/>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 </body>

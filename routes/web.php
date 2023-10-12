@@ -93,3 +93,7 @@ Route::get('/cmsServicesAddContent', function () {
 Route::get('/cmsServicesEditContent', function () {
     return view('cmsServicesEditContent');
 });
+
+Route::get('/tampilanHomeCleaning', function () {
+    return view('tampilanHomeCleaning');
+});

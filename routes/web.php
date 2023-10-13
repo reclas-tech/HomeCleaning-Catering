@@ -97,3 +97,7 @@ Route::get('/cmsServicesEditContent', function () {
 Route::get('/tampilanHomeCleaning', function () {
     return view('tampilanHomeCleaning');
 });
+
+Route::get('/tampilanTentangPerusahaan', function () {
+    return view('tampilanTentangPerusahaan');
+});

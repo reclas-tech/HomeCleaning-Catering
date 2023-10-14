@@ -22,7 +22,7 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <div class="relative">
+    <div class="">
         <x-navbarTampilan/>
         {{ $slot }}
         <x-footerTampilan/>

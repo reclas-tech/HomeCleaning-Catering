@@ -113,11 +113,11 @@ $Data = [
     <!-- mobile -->
     <div class="md:hidden">
         <div id="indicators-carousel" class="relative" data-carousel="slide">
-            <div class="relative overflow-hidden md:h-80 flex">
+            <div class="relative overflow-hidden md:h-72 flex">
 
                 @foreach($Data as $index => $item)
                 @if($index % 2 == 0)
-                <div class="hidden duration-700 ease-in-out flex gap-4 justify-center p-lg-5 p-sm-2 p-3 pt-[2%] bg-white"
+                <div class="hidden duration-700 ease-in-out flex gap-4 justify-center p-2 bg-white shadow-xl rounded-lg"
                     data-carousel-item="active">
                     @endif
                     <div class="w-64 h-64 relative">
@@ -144,11 +144,11 @@ $Data = [
     <!-- tablet -->
     <div class="hidden md:block lg:hidden">
         <div id="indicators-carousel" class="relative" data-carousel="slide">
-            <div class="relative overflow-hidden md:h-80">
+            <div class="relative overflow-hidden md:h-72">
 
                 @foreach($Data as $index => $item)
                 @if($index % 3 == 0)
-                <div class="hidden duration-700 ease-in-out flex gap-4 justify-center p-lg-5 p-sm-2 p-3 pt-[2%] bg-white"
+                <div class="hidden duration-700 ease-in-out flex gap-4 justify-center p-4 bg-white rounded-lg shadow-xl"
                     data-carousel-item="active">
                     @endif
                     <div class="w-64 h-64 relative">
@@ -174,11 +174,11 @@ $Data = [
     <!-- Komputer -->
     <div class="hidden lg:block">
         <div id="indicators-carousel" class="relative" data-carousel="slide">
-            <div class="relative overflow-hidden md:h-80">
+            <div class="relative overflow-hidden md:h-72">
 
                 @foreach($Data as $index => $item)
                 @if($index % 4 == 0)
-                <div class="hidden duration-700 ease-in-out flex gap-4 justify-center p-lg-5 p-sm-2 p-3 pt-[2%] bg-white"
+                <div class="hidden duration-700 ease-in-out flex gap-4 justify-center p-5 bg-white shadow-xl rounded-lg"
                     data-carousel-item="active">
                     @endif
                     <div class="w-64 h-64 relative">

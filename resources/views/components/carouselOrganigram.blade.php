@@ -1,44 +1,44 @@
 <?php 
 $cardsData = [
     [
-                        'profileName' => 'Bonnie Green',
-                        'profileRole' => 'Visual Designer',
-                        'profileImage' => asset('assets/tampilanAssets/profile.png'),
+                        'profileName' => 'Marina',
+                        'profileRole' => 'Balai Besar POM Bandar Lampung',
+                        'profileImage' => asset('assets/tampilanAssets/Marina.png'),
                     ],
                     [
-                        'profileName' => 'Alice Blue',
-                        'profileRole' => 'Frontend Developer',
-                        'profileImage' => asset('assets/tampilanAssets/profile.png'),
+                        'profileName' => 'Wagino',
+                        'profileRole' => 'Balai Besar POM Bandar Lampung',
+                        'profileImage' => asset('assets/tampilanAssets/Wagino.png'),
                     ],
                     [
-                        'profileName' => 'Charlie Brown',
-                        'profileRole' => 'UX/UI Designer',
-                        'profileImage' => asset('assets/tampilanAssets/profile.png'),
+                        'profileName' => 'Syahrudin',
+                        'profileRole' => 'Balai Besar POM Bandar Lampung',
+                        'profileImage' => asset('assets/tampilanAssets/Syahrudin.png'),
                     ],
                     [
-                        'profileName' => 'Ngentot',
-                        'profileRole' => 'UX/UI Designer',
-                        'profileImage' => asset('assets/tampilanAssets/profile.png'),
+                        'profileName' => 'Ali',
+                        'profileRole' => 'Balai Besar POM Bandar Lampung',
+                        'profileImage' => asset('assets/tampilanAssets/Ali.png'),
                     ],
                     [
-                        'profileName' => 'Ngentot 1',
-                        'profileRole' => 'Visual Designer',
-                        'profileImage' => asset('assets/tampilanAssets/profile.png'),
+                        'profileName' => 'Marina',
+                        'profileRole' => 'Balai Besar POM Bandar Lampung',
+                        'profileImage' => asset('assets/tampilanAssets/Marina.png'),
                     ],
                     [
-                        'profileName' => 'Ngentot 2',
-                        'profileRole' => 'Frontend Developer',
-                        'profileImage' => asset('assets/tampilanAssets/profile.png'),
+                        'profileName' => 'Wagino',
+                        'profileRole' => 'Balai Besar POM Bandar Lampung',
+                        'profileImage' => asset('assets/tampilanAssets/Wagino.png'),
                     ],
                     [
-                        'profileName' => 'Ngentot 3',
-                        'profileRole' => 'UX/UI Designer',
-                        'profileImage' => asset('assets/tampilanAssets/profile.png'),
+                        'profileName' => 'Syahrudin',
+                        'profileRole' => 'Balai Besar POM Bandar Lampung',
+                        'profileImage' => asset('assets/tampilanAssets/Syahrudin.png'),
                     ],
                     [
-                        'profileName' => 'Ngentot 4',
-                        'profileRole' => 'UX/UI Designer',
-                        'profileImage' => asset('assets/tampilanAssets/profile.png'),
+                        'profileName' => 'Ali',
+                        'profileRole' => 'Balai Besar POM Bandar Lampung',
+                        'profileImage' => asset('assets/tampilanAssets/Ali.png'),
                     ],
 ];
 ?>

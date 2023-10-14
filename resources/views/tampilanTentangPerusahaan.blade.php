@@ -9,7 +9,34 @@
                 extendClass="text-white text-center mt-6" />
         </div>
     </div>
-    <div class="w-full justify-center items-start bg-[#EEEFF4] pt-10">
+
+    <div class="absolute z-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center justify-center">
+        <div class="w-[604px] bg-neutral-100 rounded-lg shadow-2xl pt-3">
+            <div class="text-center relative text-black text-lg font-bold font-['Open Sans'] rounded-2xl">Our Products
+                and Services</div>
+            <div class="grid grid-cols-2 gap-10 justify-center items-start pt-3 pb-7 mx-8 pl-16 pr-16">
+                <a href="#">
+                    <div class="max-w-sm p-6 bg-[#FA8F21] shadow-2xl rounded-lg">
+                        <div class="ml-[30%]">
+                            <img src="assets/tampilanAssets/HomeClaeningLogo.png" alt="">
+                        </div>
+                        <p class="font-normal text-white text-center pt-2">Home Cleaning</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="max-w-sm p-6 bg-[#FA8F21] shadow-2xl rounded-lg">
+                        <div class="ml-[30%]">
+                            <img src="assets/tampilanAssets/cateringLogo.png" alt="">
+                        </div>
+                        <p class="font-normal text-white text-center pt-2">Catering</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w-full justify-center items-start bg-[#EEEFF4] pt-20">
         <div class="w-full flex p-20">
             <img src="assets/tampilanAssets/about.png" alt="" class="w-[50%] h-[40%]">
             <div class="pl-16">

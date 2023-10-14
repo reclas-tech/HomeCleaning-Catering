@@ -101,3 +101,7 @@ Route::get('/tampilanHomeCleaning', function () {
 Route::get('/tampilanTentangPerusahaan', function () {
     return view('tampilanTentangPerusahaan');
 });
+
+Route::get('/tampilanKontakPerusahaan', function () {
+    return view('tampilanKontakPerusahaan');
+});

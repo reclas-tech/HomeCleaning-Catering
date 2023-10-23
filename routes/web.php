@@ -21,11 +21,11 @@ Route::get('/catering', function () {
     return view('tampilanCatering');
 });
 
-Route::get('/tampilanHomeCleaning', function () {
+Route::get('/cleaning', function () {
     return view('tampilanHomeCleaning');
 });
 
-Route::get('/tampilanTentangPerusahaan', function () {
+Route::get('/tentang', function () {
     return view('tampilanTentangPerusahaan');
 });
 

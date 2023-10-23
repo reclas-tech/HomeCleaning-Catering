@@ -114,6 +114,18 @@
         </div>
     </div>
 
+    <div class="w-full flex flex-col justify-center items-center mt-36 mb-36">
+        <div class="w-[80%] bg-[#FA8F21] p-10">
+            <h1 class="text-5xl font-bold text-white text-center">WORKING COMPANIES</h1>
+            <p class="text-base font-thin text-white text-center mt-4 m-8">Lorem Ipsum is simply dummy text of the
+                printing
+                and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </p>
+            <x-carouselWorkingCompanies />
+
+        </div>
+    </div>
+
 
 
     {{-- <div class="w-full flex flex-col justify-center items-center">

@@ -16,16 +16,16 @@
         </svg>
         <ul class="flex p-0 w-fit w-full px-6 md:px-0 md:w-[80%] lg:w-2/5 justify-between">
           <li>
-              <a href="#" class="font-thin text-[0.50rem] md:text-base text-gray-900 text-white" aria-current="page">Home</a>
+              <a href="/" class="font-thin text-[0.50rem] md:text-base text-gray-900 text-white" aria-current="page">Home</a>
           </li>
           <li>
-            <a href="#" class="font-thin text-[0.50rem] md:text-base text-gray-900 text-white" aria-current="page">Cleaning</a>
+            <a href="/cleaning" class="font-thin text-[0.50rem] md:text-base text-gray-900 text-white" aria-current="page">Cleaning</a>
           </li>
           <li>
-            <a href="#" class="font-thin text-[0.50rem] md:text-base text-gray-900 text-white" aria-current="page">Catering</a>
+            <a href="/catering" class="font-thin text-[0.50rem] md:text-base text-gray-900 text-white" aria-current="page">Catering</a>
           </li>
           <li>
-            <a href="#" class="font-thin text-[0.50rem] md:text-base text-gray-900 text-white" aria-current="page">About Us</a>
+            <a href="/tentang" class="font-thin text-[0.50rem] md:text-base text-gray-900 text-white" aria-current="page">About Us</a>
           </li>
           <li>
             <a href="#" class="font-thin text-[0.50rem] md:text-base text-gray-900 text-white" aria-current="page">Contact</a>

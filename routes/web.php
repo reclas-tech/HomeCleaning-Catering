@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('tampilanLandingPage');
 });
 
+Route::get('/catering', function () {
+    return view('tampilanCatering');
+});
+
+Route::get('/tampilanHomeCleaning', function () {
+    return view('tampilanHomeCleaning');
+});
+
+Route::get('/tampilanTentangPerusahaan', function () {
+    return view('tampilanTentangPerusahaan');
+});
+
 Route::get('/cmsDashboard', function () {
     return view('cmsDashboard');
 });
@@ -92,12 +104,4 @@ Route::get('/cmsServicesAddContent', function () {
 });
 Route::get('/cmsServicesEditContent', function () {
     return view('cmsServicesEditContent');
-});
-
-Route::get('/tampilanHomeCleaning', function () {
-    return view('tampilanHomeCleaning');
-});
-
-Route::get('/tampilanTentangPerusahaan', function () {
-    return view('tampilanTentangPerusahaan');
 });

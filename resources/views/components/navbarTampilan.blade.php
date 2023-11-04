@@ -1,4 +1,4 @@
-<nav class="bg-[#0062D1]/[0.66] w-full fixed">
+<nav class="bg-[#0062D1]/[0.66] w-full fixed z-50">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="53" viewBox="0 0 62 53" fill="none">
         <rect width="62" height="53" rx="5" fill="url(#pattern0)"/>

@@ -1,14 +1,5 @@
 <x-tampilanLayout>
-    <div
-        class="bg-[url({{asset('assets/tampilanAssets/bgTentangPerusahaan.png')}})] min-h-screen bg-auto bg-no-repeat bg-[#0062D1]/[0.46] bg-blend-overlay flex justify-center items-center">
-        <div class="w-4/6 flex flex-col justify-center items-center">
-            <h1 class="text-6xl font-bold text-white text-center">PT. ElyNaz IndoMasr Global</h1>
-            <p class="text-xl font-thin text-white text-center mt-4">PT. ElyNaz IndoMasr Global memberikan solusi
-                layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda.</p>
-            <x-cmsButton ref="#" color="#FA8F21" width="32" title="Explore Now"
-                extendClass="text-white text-center mt-6" />
-        </div>
-    </div>
+    <x-heroTampilan title="PT. ElyNaz IndoMasr Global " desc="PT. ElyNaz IndoMasr Global memberikan solusi layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda." ref="/" imgPath="{{asset('assets/tampilanAssets/bgTentangPerusahaan.png')}}"/>
     <div class="w-full justify-center items-start bg-[#EEEFF4] pt-10">
         <div class="w-full flex p-20">
             <img src="assets/tampilanAssets/about.png" alt="" class="w-[50%] h-[40%]">
@@ -49,7 +40,7 @@
     </div>
 
     <div
-        class="flex items-center justify-center h-screen bg-[url({{asset('assets/tampilanAssets/bgTentangPerusahaan.png')}})]">
+        class="flex items-center justify-center h-screen bg-[url({{asset('assets/tampilanAssets/bgTentangPerusahaan.png')}})] bg-cover">
         <div class="grid grid-cols-2 gap-10">
             <div class="max-w-sm p-6 bg-[#FA8F21] shadow rounded-tr-3xl">
                 <a href="#">

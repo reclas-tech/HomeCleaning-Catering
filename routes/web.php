@@ -24,8 +24,8 @@ use App\Http\Controllers\UserController;
 
 // DONE
 Route::controller(UserController::class) -> group(function () {
-    // Route::get('/register', 'viewRegister');
-    // Route::post('/register', 'register');
+    Route::get('/register', 'viewRegister');
+    Route::post('/register', 'register');
     Route::post('/login', 'authenticate');
     Route::middleware('guest') -> group(function () {
         Route::get('/loginPage', 'viewLogin') -> name('login');

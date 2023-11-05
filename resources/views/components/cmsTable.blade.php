@@ -34,8 +34,10 @@
                 </td>
                         @foreach($test['data'][$i] as $key => $value)
                             @if ($key !== $exception)
-                            <td class="px-6 py-4 text-gray-700 font-semibold">
-                                {{$value}}
+                            <td class="px-6 py-4">
+                                <p class="text-gray-700 font-semibold truncate max-w-[30rem]">
+                                    {{$value}}
+                                </p>
                             </td>
                             @endif
                         @endforeach

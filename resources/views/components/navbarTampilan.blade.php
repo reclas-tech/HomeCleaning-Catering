@@ -32,7 +32,7 @@
           <a href="/tentang" class="block py-2 pl-3 pr-4 font-thin text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black">About Us</a>
         </li>
         <li>
-          <a href="#" class="block py-2 pl-3 pr-4 font-thin text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black">Contact</a>
+          <a href="#Contact" class="block py-2 pl-3 pr-4 font-thin text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black">Contact</a>
         </li>
       </ul>
     </div>

@@ -48,38 +48,11 @@
             </p>
         </div>
         <div class="hidden md:flex md:flex-col w-full">
-            <div class="flex w-full p-5 gap-6 ">
-                <div class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-                <div class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-                <div class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-            </div>
-            <div class="w-full p-5 flex gap-6 ">
-                <div class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-                <div class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-                <div class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-            </div>
-            <div class="w-full p-5 flex gap-6 ">
-                <div class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-                <div class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-                <div class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
+            <div class="flex w-full p-5 gap-6 flex-wrap items-center justify-center">
+                @foreach ($dataPhotoGalery as $item)
+                    <div class="w-[30rem] h-[20rem] bg-[url({{ $item['logo'] }})] bg-cover rounded-lg">
+                    </div>
+                @endforeach
             </div>
         </div>
 
@@ -121,7 +94,7 @@
                 printing
                 and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             </p>
-            <x-carouselWorkingCompanies :data="$dataCompanies" />
+            <x-carouselWorkingCompanies :dataCompanies="$dataCompanies" />
 
         </div>
     </div>

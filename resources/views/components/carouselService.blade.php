@@ -1,9 +1,49 @@
+<?php 
+// $dataService = [
+//     [
+//                         'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
+//                         'nameTitle' => 'General Cleaning & Housekeeping',
+//                         'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
+//                     ],
+//                     [
+//                         'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
+//                         'nameTitle' => 'Asu 2',
+//                         'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
+//                     ],
+//                     [
+//                         'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
+//                         'nameTitle' => 'Asu 3',
+//                         'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
+//                     ],
+//                     [
+//                         'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
+//                         'nameTitle' => 'Asu 4',
+//                         'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
+//                     ],
+//                     [
+//                         'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
+//                         'nameTitle' => 'Asu 5',
+//                         'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
+//                     ],
+//                     [
+//                         'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
+//                         'nameTitle' => 'Asu 6',
+//                         'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
+//                     ],
+//                     [
+//                         'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
+//                         'nameTitle' => 'Asu 7',
+//                         'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
+//                     ],
+// ];
+?>
+
 <div class="grid grid-cols-1">
         <!-- Mobile -->
         <div class="md:hidden">
             <div id="indicators-carousel" class="relative w-full" data-carousel="slide">
                 <div class="relative h-[340px] overflow-hidden rounded-lg bg-white">
-                    @foreach($data as $index => $item)
+                    @foreach($dataService as $index => $item)
                     @if($index % 1 == 0)
                     <div class="hidden duration-700 ease-in-out flex gap-6 justify-center p-5 pt-[4%] "
                         data-carousel-item="active">
@@ -25,14 +65,14 @@
                                 class="w-44 left-[30px] top-[120px] absolute text-justify text-black text-sm font-normal font-['Poppins']">
                                 {{ $item['desk'] }}</div>
                         </div>
-                        @if($index % 1 == 0 || $index == count($data) - 1)
+                        @if($index % 1 == 0 || $index == count($dataService) - 1)
                     </div>
                     @endif
                     @endforeach
 
                 </div>
                 <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                    <?php for($i = 0; $i < ceil(count($data) / 1); $i++) { ?>
+                    <?php for($i = 0; $i < ceil(count($dataService) / 1); $i++) { ?>
                     <button type="button" class="w-3 h-3 rounded-full"
                         aria-current="<?= ($i == 0) ? 'true' : 'false' ?>" aria-label=""
                         data-carousel-slide-to="<?= $i ?>"></button>
@@ -46,7 +86,7 @@
             <div id="indicators-carousel" class="relative w-full" data-carousel="slide">
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-96 bg-white">
 
-                    @foreach($data as $index => $item)
+                    @foreach($dataService as $index => $item)
                     @if($index % 2 == 0)
                     <div class="hidden duration-700 ease-in-out flex gap-12 justify-center p-5 pt-[4%] mr-2"
                         data-carousel-item="active">
@@ -68,14 +108,14 @@
                                 class="w-80 left-[30px] top-[158px] absolute text-justify text-black text-sm font-normal font-['Poppins']">
                                 {{ $item['desk'] }}</div>
                         </div>
-                        @if($index % 2 == 1 || $index == count($data) - 1)
+                        @if($index % 2 == 1 || $index == count($dataService) - 1)
                     </div>
                     @endif
                     @endforeach
 
                 </div>
                 <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                    <?php for($i = 0; $i < ceil(count($data) / 2); $i++) { ?>
+                    <?php for($i = 0; $i < ceil(count($dataService) / 2); $i++) { ?>
                     <button type="button" class="w-3 h-3 rounded-full"
                         aria-current="<?= ($i == 0) ? 'true' : 'false' ?>" aria-label=""
                         data-carousel-slide-to="<?= $i ?>"></button>
@@ -89,7 +129,7 @@
             <div id="indicators-carousel" class="relative w-full" data-carousel="slide">
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-96 bg-white">
 
-                    @foreach($data as $index => $item)
+                    @foreach($dataService as $index => $item)
                     @if($index % 3 == 0)
                     <div class="hidden duration-700 ease-in-out flex gap-6 justify-center p-lg-5 p-sm-2 p-5 pt-[4%]"
                         data-carousel-item="active">
@@ -111,14 +151,14 @@
                                 class="w-80 left-[30px] top-[158px] absolute text-justify text-black text-sm font-normal font-['Poppins']">
                                 {{ $item['desk'] }}</div>
                         </div>
-                        @if($index % 3 == 2 || $index == count($data) - 1)
+                        @if($index % 3 == 2 || $index == count($dataService) - 1)
                     </div>
                     @endif
                     @endforeach
 
                 </div>
                 <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                    <?php for($i = 0; $i < ceil(count($data) / 3); $i++) { ?>
+                    <?php for($i = 0; $i < ceil(count($dataService) / 3); $i++) { ?>
                     <button type="button" class="w-3 h-3 rounded-full"
                         aria-current="<?= ($i == 0) ? 'true' : 'false' ?>" aria-label=""
                         data-carousel-slide-to="<?= $i ?>"></button>

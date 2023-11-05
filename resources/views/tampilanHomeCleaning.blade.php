@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="mt-14">
-        <x-carouselService :data="$dataService" />
+        <x-carouselService :dataService="$dataService" />
     </div>
 
     <div class="mt-20 w-full h-[870px] relative bg-[url({{asset('assets/tampilanAssets/ORGANIGRAM.png')}})]">
@@ -31,7 +31,7 @@
         </div>
         <div class="justify-items-center">
             <div class="div"></div>
-            <x-carouselOrganigram :cardsData="$dataOrganigram" />
+            <x-carouselOrganigram :dataOrganigram="$dataOrganigram" />
         </div>
     </div>
 
@@ -42,7 +42,7 @@
                 printing
                 and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             </p>
-            <x-carouselWorkingCompanies :data="$dataCompanies" />
+            <x-carouselWorkingCompanies :dataCompanies="$dataCompanies" />
 
         </div>
     </div>

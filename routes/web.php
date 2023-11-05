@@ -100,12 +100,5 @@ Route::controller(ViewController::class) -> group(function () {
     Route::get('/', 'index');
     Route::get('/cleaning', 'homeCleaning');
     Route::get('/catering', 'catering');
-});
-
-
-
-
-
-Route::get('/tentang', function () {
-    return view('tampilanTentangPerusahaan');
+    Route::get('/tentang', 'about');
 });

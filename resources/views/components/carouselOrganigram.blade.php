@@ -1,6 +1,51 @@
+<?php 
+// $dataOrganigram = [
+//     [
+//                         'profileName' => 'Bonnie Green',
+//                         'profileRole' => 'Visual Designer',
+//                         'profileImage' => asset('assets/tampilanAssets/profile.png'),
+//                     ],
+//                     [
+//                         'profileName' => 'Alice Blue',
+//                         'profileRole' => 'Frontend Developer',
+//                         'profileImage' => asset('assets/tampilanAssets/profile.png'),
+//                     ],
+//                     [
+//                         'profileName' => 'Charlie Brown',
+//                         'profileRole' => 'UX/UI Designer',
+//                         'profileImage' => asset('assets/tampilanAssets/profile.png'),
+//                     ],
+//                     [
+//                         'profileName' => 'Ngentot',
+//                         'profileRole' => 'UX/UI Designer',
+//                         'profileImage' => asset('assets/tampilanAssets/profile.png'),
+//                     ],
+//                     [
+//                         'profileName' => 'Ngentot 1',
+//                         'profileRole' => 'Visual Designer',
+//                         'profileImage' => asset('assets/tampilanAssets/profile.png'),
+//                     ],
+//                     [
+//                         'profileName' => 'Ngentot 2',
+//                         'profileRole' => 'Frontend Developer',
+//                         'profileImage' => asset('assets/tampilanAssets/profile.png'),
+//                     ],
+//                     [
+//                         'profileName' => 'Ngentot 3',
+//                         'profileRole' => 'UX/UI Designer',
+//                         'profileImage' => asset('assets/tampilanAssets/profile.png'),
+//                     ],
+//                     [
+//                         'profileName' => 'Ngentot 4',
+//                         'profileRole' => 'UX/UI Designer',
+//                         'profileImage' => asset('assets/tampilanAssets/profile.png'),
+//                     ],
+// ];
+?>
+
 <div id="animation-carousel" class="relative w-full" data-carousel="slide">
     <div class="relative h-72 overflow-hidden md:h-96 z-0 bg-white bg-opacity-30">
-        @foreach($cardsData as $index => $item)
+        @foreach($dataOrganigram as $index => $item)
         @if($index % 4 == 0)
         <div class="hidden duration-200 ease-linear flex gap-6 justify-center pl-[7%] pr-[7%] pt-[4%] pb-[4%]"
             data-carousel-item>

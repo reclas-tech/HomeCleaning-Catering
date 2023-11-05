@@ -3,7 +3,7 @@
         clip-path: polygon(0 40%, 50% 18%, 100% 40%, 100% 100%, 0% 100%);
     }
 </style>
-<div class="shape bg-[#113258] min-h-[60vh] flex justify-center items-center">
+<div class="shape bg-[#113258] min-h-[60vh] flex justify-center items-center" id="Contact">
     <div class="w-4/6 flex flex-col justify-center items-center mt-20 md:mt-12">
         <svg class="my-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="85" viewBox="0 0 100 85" fill="none">
           <rect width="100" height="85" rx="5" fill="url(#pattern0)"/>

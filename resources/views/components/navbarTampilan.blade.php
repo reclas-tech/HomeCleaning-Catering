@@ -1,5 +1,5 @@
 <nav class="bg-[#0062D1]/[0.66] w-full fixed z-50">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 z-[99]">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="53" viewBox="0 0 62 53" fill="none">
         <rect width="62" height="53" rx="5" fill="url(#pattern0)"/>
         <defs>
@@ -32,7 +32,7 @@
           <a href="/tentang" class="block py-2 pl-3 pr-4 font-thin text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black">About Us</a>
         </li>
         <li>
-          <a href="#" class="block py-2 pl-3 pr-4 font-thin text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black">Contact</a>
+          <a href="/kontak" class="block py-2 pl-3 pr-4 font-thin text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black">Contact</a>
         </li>
       </ul>
     </div>

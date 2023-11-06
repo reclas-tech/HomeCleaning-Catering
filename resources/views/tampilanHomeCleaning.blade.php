@@ -1,9 +1,8 @@
 <x-tampilanLayout>
     <x-heroTampilan title="PT. ElyNaz IndoMasr Global "
         desc="PT. ElyNaz IndoMasr Global memberikan solusi layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda."
-        ref="/" imgPath="{{asset('assets/tampilanAssets/cleaningBackground.png')}}" />
-
-    <div class="w-full flex flex-col justify-center items-center">
+        ref="#section2" imgPath="{{asset('assets/tampilanAssets/cleaningBackground.png')}}" butTitle="Explore Now" />
+    <div id="section2" class="w-full flex flex-col justify-center items-center">
         <div class="w-[50%]">
             <h1 class="text-5xl font-bold text-black text-center mt-20">OUR SERVICES</h1>
             <p class="text-base font-thin text-black text-center mt-4">Lorem Ipsum is simply dummy text of the printing

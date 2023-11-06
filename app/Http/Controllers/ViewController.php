@@ -37,7 +37,7 @@ class ViewController extends Controller
         if ($services -> isNotEmpty()) {
             foreach ($services as $item) {
                 $temp = [
-                    'logo' => asset('storage/' . $item -> image),
+                    'logo' => asset($item -> image),
                     'nameTitle' => $item -> name,
                     'desk' => $item -> description,
                 ];

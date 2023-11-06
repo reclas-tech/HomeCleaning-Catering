@@ -9,12 +9,9 @@
             </p>
         </div>
         <div class="hidden md:flex flex-wrap gap-10 mt-4 w-[85%] justify-center items-center">
-            <x-cateringCard title="Catering 1" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s," />
-            <x-cateringCard title="Catering 1" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s," />
-            <x-cateringCard title="Catering 1" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s," />
-            <x-cateringCard title="Catering 1" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s," />
-            <x-cateringCard title="Catering 1" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s," />
-
+            @foreach ($dataCatering as $item)
+            <x-cateringCard title="{{ $item['name'] }}" desc="{{ $item['description'] }}" />
+            @endforeach
         </div>
     </div>
 

@@ -27,14 +27,14 @@ class ServiceController extends Controller
             $item = $request -> validate([
                 'name' => ['required'],
                 'description' => ['required'],
-                'image' => ['required'],
+                // 'image' => ['required'],
             ]);
-            $image = $request -> file('image') -> store('serviceImages');
+            // $image = $request -> file('image') -> store('serviceImages');
         } catch (\Exception $e) {
             return back() -> with('failedAddContent', 'Gagal menambahkan data');
         }
 
-        $item['image'] = $image;
+        $item['image'] = 'assets/tampilanAssets/homeCleaningService.png';
         $item['author'] = auth() -> user() -> email;
 
         try {
@@ -105,17 +105,8 @@ class ServiceController extends Controller
                 'description' => ['required'],
                 // 'image' => ['required'],
             ]);
-            $image = NULL;
-            if ($request -> file('image')) {
-                $image = $request -> file('image') -> store('serviceImages');
-            }
         } catch (\Exception $e) {
             return back() -> with('failedAddContent', 'Gagal menambahkan data');
-        }
-
-        if ($image) {
-            $item['image'] = $image;
-            Storage::delete($service -> image);
         }
 
         $item['author'] = auth() -> user() -> email;
@@ -139,7 +130,6 @@ class ServiceController extends Controller
         }
 
         try {
-            Storage::delete($service -> image);
             $service -> update(['author' => auth() -> user() -> email]);
             $service -> delete();
             return response() -> json ([

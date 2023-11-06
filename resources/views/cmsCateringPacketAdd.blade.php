@@ -7,7 +7,7 @@
         <x-cmsInputBox label="Packet Name" title="Add Packet Name" id="name" value="" />
         <x-cmsTextArea label="Description" id="description" title="Add Description" value="" />
         <div class="flex place-content-between items-end">
-            <x-cmsAddPhoto title="Add Photo" subTitle="AddPhoto" desk="No photo." id="image" />
+            {{-- <x-cmsAddPhoto title="Add Photo" subTitle="AddPhoto" desk="No photo." id="image" /> --}}
             <x-cmsButtonSave />
         </div>
     </form>

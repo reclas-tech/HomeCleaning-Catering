@@ -111,7 +111,36 @@
 
 <div class="grid grid-cols-1">
 
-    @if (count($dataCompanies) >= 5)
+    @if (count($dataCompanies) == 1)
+
+    <div class="relative">
+        <div class="relative overflow-hidden md:h-80">
+            <div class="duration-700 ease-in-out flex gap-4 justify-center p-lg-5 p-sm-2 p-3 pt-[2%] bg-white"
+                data-carousel-item="active">
+                <div class="w-64 h-64 relative">
+                    <img class="w-full h-full absolute m-auto p-5" src="{{ $dataCompanies[0]['logo'] }}" alt="bg-profile" />
+                </div>
+
+            </div>
+    </div>
+
+    @elseif (count($dataCompanies) > 1 && count($dataCompanies) < 5)
+
+    <div id="indicators-carousel" class="relative" data-carousel="slide">
+        <div class="relative overflow-hidden md:h-80">
+            @foreach($dataCompanies as $index => $item)
+            <div class="hidden duration-700 ease-in-out flex gap-4 justify-center p-lg-5 p-sm-2 p-3 pt-[2%] bg-white"
+                data-carousel-item="active">
+                <div class="w-64 h-64 relative">
+                    <img class="w-full h-full absolute m-auto p-5" src="{{ $item['logo'] }}" alt="bg-profile" />
+                </div>
+            </div>
+            @endforeach
+
+        </div>
+    </div>
+
+    @elseif (count($dataCompanies) >= 5)
 
     <!-- mobile -->
     <div class="md:hidden">
@@ -133,13 +162,6 @@
             @endforeach
 
         </div>
-        <!-- <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                    <?php for($i = 0; $i < ceil(count($dataCompanies) / 3); $i++) { ?>
-                    <button type="button" class="w-3 h-3 rounded-full"
-                        aria-current="<?= $i == 0 ? 'true' : 'false' ?>" aria-label=""
-                        data-carousel-slide-to="<?= $i ?>"></button>
-                    <?php } ?>
-                </div> -->
     </div>
 </div>
 
@@ -164,13 +186,6 @@
         @endforeach
 
     </div>
-    <!-- <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                    <?php for($i = 0; $i < ceil(count($dataCompanies) / 3); $i++) { ?>
-                    <button type="button" class="w-3 h-3 rounded-full"
-                        aria-current="<?= $i == 0 ? 'true' : 'false' ?>" aria-label=""
-                        data-carousel-slide-to="<?= $i ?>"></button>
-                    <?php } ?>
-                </div> -->
 </div>
 </div>
 
@@ -193,19 +208,8 @@
             @endforeach
 
         </div>
-        <!-- <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                <?php for($i = 0; $i < ceil(count($dataCompanies) / 4); $i++) { ?>
-                <button type="button" class="w-3 h-3 rounded-full"
-                    aria-current="<?= ($i == 0) ? 'true' : 'false' ?>" aria-label=""
-                    data-carousel-slide-to="<?= $i ?>"></button>
-                <?php } ?>
-            </div> -->
     </div>
 </div>
-
-    @else
-
-    <div class="h-80"></div>
 
     @endif
 

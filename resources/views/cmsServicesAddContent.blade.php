@@ -7,7 +7,7 @@
         <x-cmsInputBox label="Service Name" title="Add Service Name" id="name" value="" />
         <x-cmsTextArea label="Description" title="Add Description" id="description" value="" />
         <div class="flex place-content-between items-end">
-            <x-cmsAddPhoto title="Add Photo" subTitle="AddPhoto" desk="No photo." />
+            {{-- <x-cmsAddPhoto title="Add Photo" subTitle="AddPhoto" desk="No photo." /> --}}
             <x-cmsButtonSave />
         </div>
     </form>

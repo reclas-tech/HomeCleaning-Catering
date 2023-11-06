@@ -27,14 +27,14 @@ class CateringPacketController extends Controller
             $item = $request -> validate([
                 'name' => ['required'],
                 'description' => ['required'],
-                'image' => ['required'],
+                // 'image' => ['required'],
             ]);
-            $image = $request -> file('image') -> store('cateringPacketImages');
+            // $image = $request -> file('image') -> store('cateringPacketImages');
         } catch (\Exception $e) {
             return back() -> with('failedAddContent', 'Gagal menambahkan data');
         }
 
-        $item['image'] = $image;
+        $item['image'] = '/';
         $item['author'] = auth() -> user() -> email;
 
         try {
@@ -104,18 +104,18 @@ class CateringPacketController extends Controller
                 'description' => ['required'],
                 // 'image' => ['required'],
             ]);
-            $image = NULL;
-            if ($request -> file('image')) {
-                $image = $request -> file('image') -> store('cateringPacketImages');
-            }
+            // $image = NULL;
+            // if ($request -> file('image')) {
+            //     $image = $request -> file('image') -> store('cateringPacketImages');
+            // }
         } catch (\Exception $e) {
             return back() -> with('failedAddContent', 'Gagal menambahkan data');
         }
 
-        if ($image) {
-            $item['image'] = $image;
-            Storage::delete($cateringPacket -> image);
-        }
+        // if ($image) {
+        //     $item['image'] = $image;
+        //     Storage::delete($cateringPacket -> image);
+        // }
 
         $item['author'] = auth() -> user() -> email;
 
@@ -138,7 +138,7 @@ class CateringPacketController extends Controller
         }
 
         try {
-            Storage::delete($cateringPacket -> image);
+            // Storage::delete($cateringPacket -> image);
             $cateringPacket -> update(['author' => auth() -> user() -> email]);
             $cateringPacket -> delete();
             return response() -> json ([

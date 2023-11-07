@@ -35,7 +35,7 @@
                         @foreach($test['data'][$i] as $key => $value)
                             @if ($key !== $exception)
                             <td class="px-6 py-4">
-                                <p class="text-gray-700 font-semibold truncate max-w-[22rem]">
+                                <p class="text-gray-700 font-semibold truncate max-w-[20rem]">
                                     {{$value}}
                                 </p>
                             </td>

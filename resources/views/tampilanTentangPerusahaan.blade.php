@@ -3,6 +3,8 @@
         desc="PT. ElyNaz IndoMasr Global memberikan solusi layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda."
         ref="/" imgPath="{{asset('assets/tampilanAssets/bgTentangPerusahaan.png')}}" />
 
+    <x-humberger refWA="https://api.whatsapp.com/send/?phone=Hp082373377203
+&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/elynazindomasr/"/>/>
     <!-- Mobile -->
     <div class="md:hidden">
         <div class="justify-center items-start bg-[#EEEFF4] pt-10">
@@ -12,14 +14,18 @@
                 <div class="pl-8 pr-8 pb-8 text-justify ">
                     <h1 class="text-5xl font-bold text-black pb-10 mt-10 text-center">ABOUT US</h1>
                     <p class="text-lg font-thin text-black text-justify">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
                         the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
                         type
                         and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the
                         leap
-                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                        into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s
                         with
                         the
                         release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
@@ -36,11 +42,14 @@
                 <div class="pl-8 pr-8 pb-8 text-justify ">
                     <h1 class="text-5xl font-bold text-black pb-10 mt-10 text-center">Company History</h1>
                     <p class="text-lg font-thin text-black text-justify">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
                         the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
                         type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                        also
                         the
                         leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
                         1960s
@@ -61,11 +70,14 @@
                         </h5>
                     </a>
                     <p class="mb-3 font-normal text-white text-justify">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
                         the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
                         type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                        also
                         the
                         leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
                         1960s
@@ -79,11 +91,14 @@
                         </h5>
                     </a>
                     <p class="mb-3 font-normal text-white text-justify">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
                         the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
                         type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                        also
                         the
                         leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
                         1960s
@@ -142,14 +157,18 @@ Abdalla Aboelnaga" />
                 <div class="pl-16">
                     <h1 class="text-5xl font-bold text-black pb-10">ABOUT US</h1>
                     <p class="text-lg font-thin text-black text-justify">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
                         the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
                         type
                         and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the
                         leap
-                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                        into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s
                         with
                         the
                         release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
@@ -165,11 +184,14 @@ Abdalla Aboelnaga" />
                     <h1 class="text-5xl font-bold text-black pb-10 w-[10%]">Company
                         History</h1>
                     <p class="text-lg font-thin text-black text-justify w-[90%]">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
                         the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
                         type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                        also
                         the
                         leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
                         1960s
@@ -191,11 +213,14 @@ Abdalla Aboelnaga" />
                         </h5>
                     </a>
                     <p class="mb-3 font-normal text-white text-justify">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
                         the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
                         type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                        also
                         the
                         leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
                         1960s
@@ -209,11 +234,14 @@ Abdalla Aboelnaga" />
                         </h5>
                     </a>
                     <p class="mb-3 font-normal text-white text-justify">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
                         the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
                         type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                        also
                         the
                         leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
                         1960s
@@ -263,7 +291,7 @@ Abdalla Aboelnaga" />
     </div>
 
     <div class="w-full flex flex-col justify-center items-center mt-20 mb-24">
-        <div class="w-[80%] bg-[#FA8F21] p-10">
+        <div class="w-[80%] bg-[#FA8F21] p-10 rounded-lg">
             <h1 class="lg:text-5xl md:text-4xl sm:text-3xl font-bold text-white text-center">WORKING COMPANIES</h1>
             <p class="text-base font-thin text-white text-center mt-4 m-8">Lorem Ipsum is simply dummy text of the
                 printing

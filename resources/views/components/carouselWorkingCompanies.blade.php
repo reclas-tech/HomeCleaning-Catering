@@ -117,7 +117,7 @@ $Data = [
 
                 @foreach($Data as $index => $item)
                 @if($index % 2 == 0)
-                <div class="hidden duration-700 ease-in-out flex gap-4 justify-center p-lg-5 p-sm-2 p-3 pt-[2%] bg-white"
+                <div class="hidden duration-700 ease-in-out flex gap-4 justify-center p-lg-5 p-sm-2 p-3 pt-[2%] bg-white rounded-lg"
                     data-carousel-item="active">
                     @endif
                     <div class="w-64 h-64 relative">
@@ -148,7 +148,7 @@ $Data = [
 
                 @foreach($Data as $index => $item)
                 @if($index % 3 == 0)
-                <div class="hidden duration-700 ease-in-out flex gap-4 justify-center p-lg-5 p-sm-2 p-3 pt-[2%] bg-white"
+                <div class="hidden duration-700 ease-in-out flex gap-4 justify-center p-lg-5 p-sm-2 p-3 pt-[2%] bg-white rounded-lg"
                     data-carousel-item="active">
                     @endif
                     <div class="w-64 h-64 relative">
@@ -178,7 +178,7 @@ $Data = [
 
                 @foreach($Data as $index => $item)
                 @if($index % 4 == 0)
-                <div class="hidden duration-700 ease-in-out flex gap-4 justify-center p-lg-5 p-sm-2 p-3 pt-[2%] bg-white"
+                <div class="hidden duration-700 ease-in-out flex gap-4 justify-center p-lg-5 p-sm-2 p-3 pt-[2%] bg-white rounded-lg"
                     data-carousel-item="active">
                     @endif
                     <div class="w-64 h-64 relative">

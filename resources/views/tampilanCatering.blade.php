@@ -2,7 +2,7 @@
     <x-heroTampilan title="PT. ElyNaz IndoMasr Global "
         desc="PT. ElyNaz IndoMasr Global memberikan solusi layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda."
         ref="/" imgPath="{{asset('assets/tampilanAssets/cateringBackground.png')}}" />
-
+    <x-humberger refWA="https://api.whatsapp.com/send/?phone=082278887980&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/elynazcatering/" />
     <div class="w-full flex flex-col s bg-[#EEEFF4] justify-center items-center p-8">
         <div class="w-[50%]">
             <h1 class="text-5xl font-bold text-black text-center mt-20">ELYNAZ PACKET</h1>
@@ -126,7 +126,7 @@
     </div>
 
     <div class="w-full flex flex-col justify-center items-center mt-20 mb-24">
-        <div class="w-[80%] bg-[#FA8F21] p-10">
+        <div class="w-[80%] bg-[#FA8F21] p-10 rounded-lg">
             <h1 class="lg:text-5xl md:text-4xl sm:text-3xl font-bold text-white text-center">WORKING COMPANIES</h1>
             <p class="text-base font-thin text-white text-center mt-4 m-8">Lorem Ipsum is simply dummy text of the
                 printing

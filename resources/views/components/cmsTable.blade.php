@@ -6,7 +6,7 @@
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase">
             <tr class="border-b-2 border-black">
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-5 py-3">
                     No
                 </th>
                 @foreach ($top as $thead)
@@ -14,7 +14,7 @@
                         {{ $thead }}
                     </th>
                 @endforeach 
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-6 py-3 text-center">
                     Action
                 </th>
             </tr>
@@ -29,19 +29,19 @@
             @else
                 @for ($i = 0; $i < sizeof($test['data']); $i++)
                 <tr class="bg-white border-b-2 border-black">
-                <td class="px-6 py-4 text-gray-700 font-bold">
+                <td class="px-5 py-4 text-gray-700 font-bold truncate text-center">
                     {{ $i + 1 + (($currentPage - 1) * 10)}}
                 </td>
                         @foreach($test['data'][$i] as $key => $value)
                             @if ($key !== $exception)
                             <td class="px-6 py-4">
-                                <p class="text-gray-700 font-semibold truncate max-w-[30rem]">
+                                <p class="text-gray-700 font-semibold truncate max-w-[22rem]">
                                     {{$value}}
                                 </p>
                             </td>
                             @endif
                         @endforeach
-                        <td class="px-1 py-2 w-48">
+                        <td class="px-2.5 py-2 w-fit flex flex-row gap-1 items-center justify-center">
                             <a href="{{ url() -> current() }}/edit/{{ $test['data'][$i]['id'] }}" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-3 py-2.5 dark:focus:ring-yellow-900">Edit</a>
                             <button value="{{ $test['data'][$i]['id'] }}" onclick="deleteData(this)" data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Delete</button>
                         </td>
@@ -130,13 +130,13 @@
     function dataDelete () {
         fetch(window.location.origin + window.location.pathname + "/" + deleteIndex).then((res) => res.json()).then((data) => {
             if (!data.status) {
-                alertWrongEmailPassword('Gagal menghapus data');
+                alertInputRequired('Delete data failed');
             } else {
-                alertSuccessLogin('Berhasil menghapus data');
+                alertDataEditedSuccessfully('Delete data successfully');
                 setTimeout(
                     function(){
                         window.location.reload();
-                    }, 1500);
+                    }, 800);
             }
         });
     }

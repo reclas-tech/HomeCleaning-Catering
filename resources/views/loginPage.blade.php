@@ -126,7 +126,7 @@
                             </span>
                             <input type="email" id="email" name="email"
                                 class="h-[47px] px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-                                placeholder="example@company.com" oninvalid="this.setCustomValidity('Masukkan email anda'); alertModalEmailPasswordWrong('Masukkan Email dan Password')" oninput="this.setCustomValidity('')" maxlength="255" value="{{ old('email') }}" required />
+                                placeholder="example@company.com" oninvalid="this.setCustomValidity('Input your email address'); alertInputRequired()" oninput="this.setCustomValidity('')" maxlength="255" value="{{ old('email') }}" required />
                         </label>
                     </div>
                     <div class="mb-[20px]">
@@ -137,7 +137,7 @@
                             <div class="password-container">
                                 <input type="password" name="password" id="password"
                                     class="h-[47px] px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-                                    placeholder="*********" oninvalid="this.setCustomValidity('Masukkan password anda minimal 6 karakter'); alertModalEmailPasswordWrong('Masukkan Email dan Password')" oninput="this.setCustomValidity('')" minLength="6" maxlength="255" required />
+                                    placeholder="*********" oninvalid="this.setCustomValidity('Input your password, at least 6 character'); alertInputRequired()" oninput="this.setCustomValidity('')" minLength="6" maxlength="255" required />
                                 <button type="button" class="eye-icon" id="eye-open" onclick="togglePasswordVisibility('open')">
                                     <svg id="eye-open" width="1em" height="1em" viewBox="0 0 16 16"
                                         class="bi bi-eye-fill cursor-pointer text-[#8F8F8F]" fill="currentColor"
@@ -177,7 +177,7 @@
     @if (session()->has('failedLogin'))
         <script>
             document.addEventListener("DOMContentLoaded", function(event) { 
-                alertModalEmailPasswordWrong('Email atau Password Salah');
+                alertModalEmailPasswordWrong();
             });
         </script>
     @endif
@@ -193,7 +193,7 @@
     @if (session()->has('successCreateNewPassword'))
         <script>
             document.addEventListener("DOMContentLoaded", function(event) { 
-                alertPasswordChangeSuccessfuly('Berhasil membuat kata sandi baru');
+                alertPasswordChangeSuccessfuly();
             });
         </script>
     @endif

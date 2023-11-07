@@ -18,9 +18,10 @@
       }
     }
     </script>
+    <x-alertDataEditedSuccessfully />
+    <x-alertDataEnteredSuccessfully />
+    <x-alertInputRequired />
     <x-alertSuccessLogin />
-    <x-alertWrongEmailPassword />
-    <x-alertLogout />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
     <title>Dashboard</title>
 </head>
@@ -32,6 +33,7 @@
           {{ $slot }}
         </div>
     </div>
+    <div id="modalContainer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 </body>
 </html>

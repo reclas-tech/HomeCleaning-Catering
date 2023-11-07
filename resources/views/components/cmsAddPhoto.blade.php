@@ -3,7 +3,7 @@
     <div class="flex justify-between">
         <div class="flex">
             <div class="inline-block text-left bg-white w-72 relative rounded-md">
-            <input type="file" id="imageUpload" name="image" class="absolute opacity-0 cursor-pointer" oninvalid="this.setCustomValidity('Masukkan Input'); errorMessage()" onchange="this.setCustomValidity('')" accept="image/*" required >
+            <input type="file" id="imageUpload" name="image" class="absolute opacity-0 cursor-pointer" oninvalid="this.setCustomValidity('Input your image'); alertInputRequired()" onchange="this.setCustomValidity('')" accept="image/*" required >
             <label for="imageUpload"
                 class="bg-[#FA8F21] hover:bg-dodgerblue text-white hover:text-white inline-block mr-2 px-6 py-2 rounded-md cursor-pointer">{{$subTitle}}</label>
             <span id="imageStatus" class="text-black">{{$desk}}</span>
@@ -20,9 +20,6 @@
                 imageStatus.innerText = "No photo.";
             }
         });
-        function errorMessage () {
-            alertInputRequired('Masukkan input dengan benar!');
-        }
     </script>
     </div>
 </div>

@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <x-alertEnterOTPCode />
     <x-alertOTPCodeHasBeenSent />
+    <x-alertOTPWrongNotFound />
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -99,7 +100,7 @@
                             </span>
                             <input type="hidden" name="email" value="{{ $email }}">
                             <input type="text" id="OTP" name="otp"
-                                class="h-[47px] px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" oninvalid="this.setCustomValidity('Masukkan 6 karakter kode OTP'); alertEnterOTPCode('Masukkan Kode OTP')" oninput="this.setCustomValidity('')" 
+                                class="h-[47px] px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" oninvalid="this.setCustomValidity('Input your OTP code'); alertEnterOTPCode()" oninput="this.setCustomValidity('')" 
                                 placeholder="XXXXXX" minlength="6" maxlength="6" required />
                         </label>
                     </div>
@@ -114,7 +115,7 @@
     @if (session()->has('successSendOTP'))
         <script>
             document.addEventListener("DOMContentLoaded", function(event) { 
-                alertOTPCodeHasBeenSent('OTP berhasil dikirim');
+                alertOTPCodeHasBeenSent();
             });
         </script>
     @endif
@@ -122,7 +123,7 @@
     @if (session()->has('failedSendOTP'))
         <script>
             document.addEventListener("DOMContentLoaded", function(event) { 
-                alertEnterOTPCode('Kode OTP tidak sesuai');
+                alertOTPWrongNotFound();
             });
         </script>
     @endif

@@ -2,7 +2,7 @@
 	@csrf
 
 	<input type="email" name="email">
-	<input type="text" name="password">
+	<input type="text" name="password" minlength="6">
 
 	<button type="submit">REGISTER</button>
 

@@ -5,7 +5,7 @@
         const modal = document.createElement("div");
         modal.id = "customModal";
         modal.className =
-            "hidden fixed bottom-0 right-0 bg-opacity-75 bg-white flex justify-center items-center mb-5 mr-12";
+            "hidden fixed bottom-0 right-0 bg-opacity-75 bg-white flex justify-center items-center mb-5 mr-12 z-[99]";
         modal.innerHTML = `
             <button id="customModalClose">
             <div class="w-60 h-14 px-4 py-2.5 bg-white rounded shadow justify-between items-center inline-flex">

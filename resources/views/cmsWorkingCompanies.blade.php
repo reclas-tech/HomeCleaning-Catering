@@ -6,7 +6,7 @@
     @if (session()->has('successAddContent'))
         <script>
             document.addEventListener("DOMContentLoaded", function(event) { 
-                alertSuccessLogin('Berhasil menambahkan data');
+                alertDataEnteredSuccessfully();
             });
         </script>
     @endif

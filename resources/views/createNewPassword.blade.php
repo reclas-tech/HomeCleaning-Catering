@@ -141,7 +141,7 @@
                             <div class="password-container">
                                 <input type="password" name="password" id="newPassword"
                                     class="h-[47px] px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-                                    placeholder="*********" oninvalid="this.setCustomValidity('Masukkan Kata Sandi Baru, Minimal 6 Karakter'); alertEnterNewPassword('Masukkan Kata Sandi Baru')" oninput="this.setCustomValidity('')" minlength="6" required />
+                                    placeholder="*********" oninvalid="this.setCustomValidity('Input your password at least 6 character'); alertEnterNewPassword()" oninput="this.setCustomValidity('')" minlength="6" required />
                                 <button type="button" class="eye-icon" id="eye-open1" onclick="toggleNewPasswordVisibility('open')">
                                     <svg id="eye-open1" width="1em" height="1em" viewBox="0 0 16 16"
                                         class="bi bi-eye-fill cursor-pointer text-[#8F8F8F]" fill="currentColor"
@@ -173,7 +173,7 @@
                             <div class="password-container">
                                 <input type="password" name="password_confirmation" id="reEnterNewPassword"
                                     class="h-[47px] px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-                                    placeholder="*********" oninvalid="this.setCustomValidity('Masukkan Konfirmasi Kata Sandi Baru'); alertReEnterNewPassword('Masukkan Kata Sandi Baru')" oninput="this.setCustomValidity('')" minlength="6" required />
+                                    placeholder="*********" oninvalid="this.setCustomValidity('Input password confirmation'); alertReEnterNewPassword()" oninput="this.setCustomValidity('')" minlength="6" required />
                                 <button type="button" class="eye-icon" id="eye-open2" onclick="toggleReNewPasswordVisibility('open')">
                                     <svg id="eye-open" width="1em" height="1em" viewBox="0 0 16 16"
                                         class="bi bi-eye-fill cursor-pointer text-[#8F8F8F]" fill="currentColor"
@@ -209,7 +209,7 @@
     @if (session()->has('successCheckOTP'))
         <script>
             document.addEventListener("DOMContentLoaded", function(event) { 
-                alertOTPCodeHasBeenSent('Silahkan buat kata sandi baru');
+                alertEnterNewPassword();
             });
         </script>
     @endif
@@ -217,7 +217,7 @@
     @if (session()->has('failedCreateNewPassword'))
         <script>
             document.addEventListener("DOMContentLoaded", function(event) { 
-                alertPasswordNotFound('Gagal membuat kata sandi baru');
+                alertPasswordNotFound();
             });
         </script>
     @endif

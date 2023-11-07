@@ -1,6 +1,4 @@
 <x-cmsLayout>
-    <x-alertInputRequired />
-    <x-alertDataEditedSuccessfully />
     <h1 class="text-3xl font-semibold mt-2 mb-8">Edited Home Cleaning Organigram</h1>
     <form action="{{ url() -> current() }}" method="POST" enctype="multipart/form-data">
         @csrf
@@ -14,10 +12,8 @@
     @if (session()->has('failedAddContent'))
         <script>
             document.addEventListener("DOMContentLoaded", function(event) { 
-                alertWrongEmailPassword('Gagal menyimpan data');
+                alertInputRequired('Save data failed');
             });
         </script>
     @endif
-    <!-- Custom Modal Container -->
-    <div id="modalContainer"></div>
 </x-cmsLayout>

@@ -100,7 +100,7 @@
                             </span>
                             <input type="email" id="email" name="email"
                                 class="h-[47px] px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-                                placeholder="example@company.com" oninvalid="this.setCustomValidity('Masukkan email anda'); alertEnterEmail('Masukkan Email')" oninput="this.setCustomValidity('')" maxlength="255" value="{{ old('email') }}" required />
+                                placeholder="example@company.com" oninvalid="this.setCustomValidity('Input your email address'); alertEnterEmail()" oninput="this.setCustomValidity('')" maxlength="255" value="{{ old('email') }}" required />
                         </label>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
     @if (session()->has('failedForgetPassword'))
         <script>
             document.addEventListener("DOMContentLoaded", function(event) { 
-                alertEmailNotFound('Email tidak ditemukan');
+                alertEmailNotFound();
             });
         </script>
     @endif

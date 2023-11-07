@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="mt-14">
-        <x-carouselService :dataService="$dataService" />
+        <x-carouselService />
     </div>
     <div class="mt-20 w-full h-[870px] bg-cover bg-no-repeat relative bg-[url({{asset('assets/tampilanAssets/ORGANIGRAM.png')}})]">
         <div class="lg:w-[40%] md:w-[70%] sm:w-full flex flex-col ml-16 mr-16 mb-20 text-start">

@@ -2,8 +2,7 @@
     <x-heroTampilan title="PT. ElyNaz IndoMasr Global "
         desc="PT. ElyNaz IndoMasr Global memberikan solusi layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda."
         ref="#section2" imgPath="{{asset('assets/tampilanAssets/firstHome.png')}}" butTitle="Explore Now" />
-    <x-humberger refWA="https://api.whatsapp.com/send/?phone=Hp082373377203
-&text&type=phone_number&app_absent=0" refInstagram="#" />
+    <x-humberger refWA="https://api.whatsapp.com/send/?phone=081539274249&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/sweepmop/" />
     <div id="section2" class="flex gap-y-5 md:gap-y-0 flex-col md:flex-row justify-between items-center min-h-screen md:px-10">
         <div class="max-w-sm p-6 sm:mb-4">
             <h5 class="mb-2 text-5xl font-bold tracking-tight text-black">PRODUK <br> DAN LAYANAN</h5>

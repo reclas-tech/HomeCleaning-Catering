@@ -3,7 +3,7 @@
         desc="PT. ElyNaz IndoMasr Global memberikan solusi layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda."
         ref="#section2" imgPath="{{asset('assets/tampilanAssets/cateringBackground.png')}}" butTitle="Explore Now" />
     <x-humberger refWA="https://api.whatsapp.com/send/?phone=082278887980&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/elynazcatering/" />
-    <div class="w-full flex flex-col s bg-[#EEEFF4] justify-center items-center p-8">
+    <div id="section2" class="w-full flex flex-col s bg-[#EEEFF4] justify-center items-center p-8">
         <div class="w-[50%]">
             <h1 class="text-5xl font-bold text-black text-center mt-20">ELYNAZ PACKET</h1>
             <p class="text-base font-thin text-black text-center mt-4">Lorem Ipsum is simply dummy text of the printing
@@ -29,27 +29,27 @@
         <div class="flex md:flex-col w-full">
             <div class="flex w-full flex-col md:flex-row gap-4 flex-wrap items-center justify-center">
                 <div
-                    class=" w-[15rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
+                    class=" w-[15rem] hover:md:w-[28rem] hover:md:h-[23rem] hover:w-[18rem] hover:h-[16rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
                     .
                 </div>
                 <div
-                    class=" w-[15rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
+                    class=" w-[15rem] hover:md:w-[28rem] hover:md:h-[23rem] hover:w-[18rem] hover:h-[16rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
                     .
                 </div>
                 <div
-                    class=" w-[15rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
+                    class=" w-[15rem] hover:md:w-[28rem] hover:md:h-[23rem] hover:w-[18rem] hover:h-[16rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
                     .
                 </div>
                 <div
-                    class=" w-[15rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
+                    class=" w-[15rem] hover:md:w-[28rem] hover:md:h-[23rem] hover:w-[18rem] hover:h-[16rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
                     .
                 </div>
                 <div
-                    class=" w-[15rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
+                    class=" w-[15rem] hover:md:w-[28rem] hover:md:h-[23rem] hover:w-[18rem] hover:h-[16rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
                     .
                 </div>
                 <div
-                    class=" w-[15rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
+                    class=" w-[15rem] hover:md:w-[28rem] hover:md:h-[23rem] hover:w-[18rem] hover:h-[16rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
                     .
                 </div>
             </div>

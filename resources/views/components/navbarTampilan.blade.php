@@ -20,19 +20,19 @@
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
       <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent sm:bg-white">
         <li>
-          <a href="/" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black" aria-current="page">Home</a>
+          <a href="/" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black {{request()->is('/') ? '' : 'font-thin'}} ">Home</a>
         </li>
         <li>
-          <a href="/cleaning" class="block py-2 pl-3 pr-4 font-thin text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black">Cleaning</a>
+          <a href="/cleaning" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black {{request()->is('cleaning') ? '' : 'font-thin'}}">Cleaning</a>
         </li>
         <li>
-          <a href="/catering" class="block py-2 pl-3 pr-4 font-thin text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black">Catering</a>
+          <a href="/catering" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black {{request()->is('catering') ? '' : 'font-thin'}}">Catering</a>
         </li>
         <li>
-          <a href="/tentang" class="block py-2 pl-3 pr-4 font-thin text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black">About Us</a>
+          <a href="/tentang" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black {{request()->is('tentang') ? '' : 'font-thin'}}">About Us</a>
         </li>
         <li>
-          <a href="/kontak" class="block py-2 pl-3 pr-4 font-thin text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black">Contact</a>
+          <a href="/kontak" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:text-white sm:text-black {{request()->is('kontak') ? '' : 'font-thin'}} ">Contact</a>
         </li>
       </ul>
     </div>

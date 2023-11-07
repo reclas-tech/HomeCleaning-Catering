@@ -66,8 +66,8 @@
 
 <!-- Komputer -->
 <div class="hidden lg:block">
-    <div class="top-0 w-full z-50 fixed mt-[30%] drop-shadow-xl">
-        <div class="flex justify-end">
+    <div class="top-0 right-0 z-50 fixed mt-[30%] drop-shadow-xl">
+        <div class="">
             <div class="flex md:order-2">
                 <button type="button top-4 right-4 md:relative md:order-2"
                     class="flex mr-3 text-sm rounded-tl-[1rem] bg-[#2186FF] p-3 md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"

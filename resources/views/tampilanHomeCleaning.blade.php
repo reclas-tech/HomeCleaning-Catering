@@ -14,7 +14,6 @@
     <div class="mt-14">
         <x-carouselService />
     </div>
-
     <div class="mt-20 w-full h-[870px] bg-cover bg-no-repeat relative bg-[url({{asset('assets/tampilanAssets/ORGANIGRAM.png')}})]">
         <div class="lg:w-[40%] md:w-[70%] sm:w-full flex flex-col ml-16 mr-16 mb-20 text-start">
             <h1 class="lg:text-5xl md:text-3xl sm:text-xl font-bold text-white mt-20">OUR ORGANIGRAM</h1>

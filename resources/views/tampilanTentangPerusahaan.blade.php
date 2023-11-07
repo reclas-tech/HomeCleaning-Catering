@@ -1,12 +1,12 @@
 <x-tampilanLayout>
     <x-heroTampilan title="PT. ElyNaz IndoMasr Global "
         desc="PT. ElyNaz IndoMasr Global memberikan solusi layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda."
-        ref="#section2" imgPath="{{asset('assets/tampilanAssets/bgTentangPerusahaan.png')}}" butTitle="Explore Now" />
-
+        ref="#section2" imgPath="{{ asset('assets/tampilanAssets/bgTentangPerusahaan.png') }}" butTitle="Explore Now" />
     <x-humberger refWA="https://api.whatsapp.com/send/?phone=Hp082373377203
-&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/elynazindomasr/"/>
+&text&type=phone_number&app_absent=0"
+        refInstagram="https://www.instagram.com/elynazindomasr/" />
     <!-- Mobile -->
-    <div id="section2" class="md:hidden">
+    <div class="md:hidden">
         <div class="justify-center items-start bg-[#EEEFF4] pt-10">
             <div class="w-full">
                 <img src="assets/tampilanAssets/about.png" alt=""
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div id="section2" class="justify-center items-start bg-white pt-10">
+        <div class="justify-center items-start bg-white pt-10">
             <div class="w-full">
                 <img src="assets/tampilanAssets/hostoryCompany.png" alt=""
                     class="w-[60%] h-[40%] flex justify-center items-center m-auto">
@@ -61,7 +61,7 @@
             </div>
         </div>
         <div
-            class="flex items-center justify-center h-screen bg-[url({{asset('assets/tampilanAssets/bgTentangPerusahaan.png')}})]">
+            class="flex items-center justify-center h-screen bg-[url({{ asset('assets/tampilanAssets/bgTentangPerusahaan.png') }})]">
             <div class="grid grid-cols-1 gap-5">
                 <div class="max-w-sm p-6 bg-[#FA8F21] shadow rounded-tr-3xl">
                     <a href="#">
@@ -135,7 +135,8 @@
             <div class="w-0.5 h-[39px] bg-black"></div>
             <div class="w-full max-w-sm border rounded-lg shadow border-black">
                 <div class="flex flex-col items-center p-5 bg-[#001BB0] rounded-t-lg">
-                    <img class="w-36 h-36 rounded-full shadow-lg" src="assets/tampilanAssets/waelProfile.png" alt="Wael Shoukry Ahmed
+                    <img class="w-36 h-36 rounded-full shadow-lg" src="assets/tampilanAssets/waelProfile.png"
+                        alt="Wael Shoukry Ahmed
 Abdalla Aboelnaga" />
                 </div>
                 <div class="text-center">
@@ -151,7 +152,7 @@ Abdalla Aboelnaga" />
 
     <!-- Komputer -->
     <div class="hidden lg:block">
-        <div class="w-full justify-center items-start bg-[#EEEFF4] pt-10">
+        <div id="section2" class="w-full justify-center items-start bg-[#EEEFF4] pt-10">
             <div class="w-full flex p-20">
                 <img src="assets/tampilanAssets/about.png" alt="" class="w-[50%] h-[40%]">
                 <div class="pl-16">
@@ -204,7 +205,7 @@ Abdalla Aboelnaga" />
             </div>
         </div>
         <div
-            class="flex items-center justify-center h-screen bg-[url({{asset('assets/tampilanAssets/bgTentangPerusahaan.png')}})]">
+            class="flex items-center justify-center h-screen bg-[url({{ asset('assets/tampilanAssets/bgTentangPerusahaan.png') }})]">
             <div class="grid grid-cols-2 gap-10">
                 <div class="max-w-sm p-6 bg-[#FA8F21] shadow rounded-tr-3xl">
                     <a href="#">
@@ -278,7 +279,8 @@ Abdalla Aboelnaga" />
             <div class="w-0.5 h-[39px] bg-black"></div>
             <div class="w-full max-w-sm border rounded-lg shadow border-black">
                 <div class="flex flex-col items-center p-5 bg-[#001BB0] rounded-t-lg">
-                    <img class="w-36 h-36 rounded-full shadow-lg" src="assets/tampilanAssets/waelProfile.png" alt="Wael Shoukry Ahmed
+                    <img class="w-36 h-36 rounded-full shadow-lg" src="assets/tampilanAssets/waelProfile.png"
+                        alt="Wael Shoukry Ahmed
 Abdalla Aboelnaga" />
                 </div>
                 <div class="text-center">

@@ -16,6 +16,10 @@ class ViewController extends Controller
         return view('tampilanLandingPage');
     }
 
+    function contact () {
+        return view('tampilanKontak');
+    }
+
     function about () {
         $companies = Company::latest() -> get();
         $dataCompanies = [];

@@ -101,4 +101,5 @@ Route::controller(ViewController::class) -> group(function () {
     Route::get('/cleaning', 'homeCleaning');
     Route::get('/catering', 'catering');
     Route::get('/tentang', 'about');
+    Route::get('/kontak', 'contact');
 });

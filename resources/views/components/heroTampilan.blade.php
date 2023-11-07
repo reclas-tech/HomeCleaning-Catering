@@ -3,7 +3,6 @@
     <div class="w-4/6 flex flex-col justify-center items-center">
         <h1 class="text-4xl md:text-6xl font-bold text-white text-center">{{$title}}</h1>
         <p class="text-sm md:text-xl font-thin text-white text-center mt-4">{{$desc}}</p>
-        <x-cmsButton ref="{{$ref}}" color="#FA8F21" width="32" title="Explore Now"
-            extendClass="text-white text-center mt-6" />
+        <x-cmsButton ref="{{$ref}}" color="#FA8F21" width="[10rem]" title="{{$butTitle}}" extendClass="text-white text-center mt-6 py-3"/>
     </div>
 </div>

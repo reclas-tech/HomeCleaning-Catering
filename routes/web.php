@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('tampilanLandingPage');
 });
 
+Route::get('/kontak', function () {
+    return view('tampilanKontak');
+});
+
 Route::get('/catering', function () {
     return view('tampilanCatering');
 });

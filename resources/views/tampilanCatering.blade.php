@@ -1,7 +1,7 @@
 <x-tampilanLayout>
     <x-heroTampilan title="PT. ElyNaz IndoMasr Global "
         desc="PT. ElyNaz IndoMasr Global memberikan solusi layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda."
-        ref="/" imgPath="{{asset('assets/tampilanAssets/cateringBackground.png')}}" />
+        ref="#section2" imgPath="{{asset('assets/tampilanAssets/cateringBackground.png')}}" butTitle="Explore Now" />
     <x-humberger refWA="https://api.whatsapp.com/send/?phone=082278887980&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/elynazcatering/" />
     <div class="w-full flex flex-col s bg-[#EEEFF4] justify-center items-center p-8">
         <div class="w-[50%]">
@@ -10,27 +10,13 @@
                 and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             </p>
         </div>
-        <div class="hidden md:flex flex-col mt-4 w-[85%] justify-center items-center">
-            <div class="flex justify-between w-full">
-                <x-cateringCard />
-                <x-cateringCard />
-                <x-cateringCard />
-            </div>
-            <div class="flex justify-between w-[65%] mt-10 mb-20">
-                <x-cateringCard />
-                <x-cateringCard />
-            </div>
-        </div>
-
-        <div class="flex md:hidden flex-col mt-4 w-full justify-center items-center">
-            <div class="flex flex-col grid gap-10 ms-0 justify-between w-full">
+            <div class="flex flex-wrap gap-10 mt-4 w-[85%] justify-center items-center">
                 <x-cateringCard />
                 <x-cateringCard />
                 <x-cateringCard />
                 <x-cateringCard />
                 <x-cateringCard />
             </div>
-        </div>
     </div>
 
     <div class="w-full flex flex-col justify-center items-center">
@@ -40,87 +26,32 @@
                 and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             </p>
         </div>
-        <div class="hidden md:flex md:flex-col w-full">
-            <div class="flex w-full p-10 gap-6 ">
+        <div class="flex md:flex-col w-full">
+            <div class="flex w-full flex-col md:flex-row gap-4 flex-wrap items-center justify-center">
                 <div
-                    class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
+                    class=" w-[15rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
                     .
                 </div>
                 <div
-                    class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
+                    class=" w-[15rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
                     .
                 </div>
                 <div
-                    class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-            </div>
-            <div class="w-full p-5 flex gap-6 ">
-                <div
-                    class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
+                    class=" w-[15rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
                     .
                 </div>
                 <div
-                    class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
+                    class=" w-[15rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
                     .
                 </div>
                 <div
-                    class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-            </div>
-            <div class="w-full p-5 flex gap-6 ">
-                <div
-                    class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
+                    class=" w-[15rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
                     .
                 </div>
                 <div
-                    class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
+                    class=" w-[15rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
                     .
                 </div>
-                <div
-                    class="w-[30rem] h-[20rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-            </div>
-        </div>
-
-        <div class="flex md:hidden flex-col justify-center items-center mt-4 gap-10 w-full">
-            <div
-                class="w-[25rem] h-[15rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                .
-            </div>
-            <div
-                class="w-[25rem] h-[15rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                .
-            </div>
-            <div
-                class="w-[25rem] h-[15rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                .
-            </div>
-            <div
-                class="w-[25rem] h-[15rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                .
-            </div>
-            <div
-                class="w-[25rem] h-[15rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                .
-            </div>
-            <div
-                class="w-[25rem] h-[15rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                .
-            </div>
-            <div
-                class="w-[25rem] h-[15rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                .
-            </div>
-            <div
-                class="w-[25rem] h-[15rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                .
-            </div>
-            <div
-                class="w-[25rem] h-[15rem] bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                .
             </div>
         </div>
     </div>

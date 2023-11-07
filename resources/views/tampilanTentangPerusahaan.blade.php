@@ -1,12 +1,12 @@
 <x-tampilanLayout>
     <x-heroTampilan title="PT. ElyNaz IndoMasr Global "
         desc="PT. ElyNaz IndoMasr Global memberikan solusi layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda."
-        ref="/" imgPath="{{asset('assets/tampilanAssets/bgTentangPerusahaan.png')}}" />
+        ref="#section2" imgPath="{{asset('assets/tampilanAssets/bgTentangPerusahaan.png')}}" butTitle="Explore Now" />
 
     <x-humberger refWA="https://api.whatsapp.com/send/?phone=Hp082373377203
 &text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/elynazindomasr/"/>
     <!-- Mobile -->
-    <div class="md:hidden">
+    <div id="section2" class="md:hidden">
         <div class="justify-center items-start bg-[#EEEFF4] pt-10">
             <div class="w-full">
                 <img src="assets/tampilanAssets/about.png" alt=""
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="justify-center items-start bg-white pt-10">
+        <div id="section2" class="justify-center items-start bg-white pt-10">
             <div class="w-full">
                 <img src="assets/tampilanAssets/hostoryCompany.png" alt=""
                     class="w-[60%] h-[40%] flex justify-center items-center m-auto">

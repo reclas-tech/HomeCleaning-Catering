@@ -1,9 +1,9 @@
 <x-tampilanLayout>
     <x-heroTampilan title="PT. ElyNaz IndoMasr Global "
         desc="PT. ElyNaz IndoMasr Global memberikan solusi layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda."
-        ref="/" imgPath="{{asset('assets/tampilanAssets/cleaningBackground.png')}}" />
-    <x-humberger refWA="https://api.whatsapp.com/send/?phone=081539274249&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/sweepmop/"/>
-    <div class="w-full flex flex-col justify-center items-center">
+        ref="#section2" imgPath="{{asset('assets/tampilanAssets/cleaningBackground.png')}}" butTitle="Explore Now" />
+        <x-humberger refWA="https://api.whatsapp.com/send/?phone=081539274249&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/sweepmop/"/>
+        <div id="section2" class="w-full flex flex-col justify-center items-center">
         <div class="w-[50%]">
             <h1 class="text-5xl font-bold text-black text-center mt-20">OUR SERVICES</h1>
             <p class="text-base font-thin text-black text-center mt-4">Lorem Ipsum is simply dummy text of the printing

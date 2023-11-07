@@ -4,7 +4,7 @@
         ref="/" imgPath="{{asset('assets/tampilanAssets/bgTentangPerusahaan.png')}}" />
 
     <x-humberger refWA="https://api.whatsapp.com/send/?phone=Hp082373377203
-&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/elynazindomasr/"/>/>
+&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/elynazindomasr/"/>
     <!-- Mobile -->
     <div class="md:hidden">
         <div class="justify-center items-start bg-[#EEEFF4] pt-10">

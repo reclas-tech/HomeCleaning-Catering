@@ -41,7 +41,6 @@
                 Bekerjasama dengan Home Cleaning dan Catering
             </p>
             <x-carouselWorkingCompanies />
-
         </div>
     </div>
 </x-tampilanLayout>

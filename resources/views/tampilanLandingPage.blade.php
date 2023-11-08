@@ -3,14 +3,12 @@
         desc="PT. ElyNaz IndoMasr Global memberikan solusi layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda."
         ref="#section2" imgPath="{{asset('assets/tampilanAssets/firstHome.png')}}" butTitle="Explore Now" />
     <x-humberger refWA="https://api.whatsapp.com/send/?phone=Hp082373377203
-&text&type=phone_number&app_absent=0" refInstagram="#" />
+&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/sweepmop/" />
     <div id="section2" class="flex gap-y-5 md:gap-y-0 flex-col md:flex-row justify-between items-center min-h-screen md:px-10">
         <div class="max-w-sm p-6 sm:mb-4">
             <h5 class="mb-2 text-5xl font-bold tracking-tight text-black">PRODUK <br> DAN LAYANAN</h5>
-            <p class="mb-3 font-normal text-medium text-black text-justify">Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
-                the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                been the industry's standard dummy text ever since the 1500s, </p>
+            <p class="mb-3 font-normal text-medium text-black text-justify">Siap untuk merasakan keindahan yang bersih secara detail dan tentunya wangi? dan dapat merasakan hidangan lezat dengan harga yang terjangkau? Bergabunglah dan hubungi kami dan nikmati SweepMop Home Cleaning serta Elynaz Catering, untuk momen-momen yang tak terlupakan
+            SweepMop Cleaning - Membuat rumah Anda bersih, Elynaz Catering - Membuat perayaan Anda istimewa. Hubungi kami sekarang!</p>
         </div>
         <div
             class="max-w-sm p-4 rounded-lg shadow bg-[url({{asset('assets/tampilanAssets/cardCleaning.png')}})] bg-cover">
@@ -46,9 +44,7 @@
     <div class="flex flex-col mt-5 md:mt-0 md:flex-row md:justify-between items-center md:min-h-screen md:px-10 bg-[#0062D1] p-5">
         <div class="max-w-sm p-6 sm:mb-4">
             <h5 class="mb-2 text-5xl font-bold tracking-tight text-white">NIKMATI <br> PENGALAMAN <br> ISTIMEWA!</h5>
-            <p class="mb-3 font-normal text-medium text-white text-justify">Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
-                the 1500s, </p>
+            <p class="mb-3 font-normal text-medium text-white text-justify">Yuk nikmati pengalaman istimewa! Bersihkan rumahmu dengan sempurna menggunakan SweepMop home cleaning, lalu nikmati hidangan lezat dari elynaz catering. Jadikan hari ini tak terlupakan!</p>
         </div>
         <div id="default-carousel" data-carousel="slide" class="relative bg-white w-full h-[13rem] md:h-[30rem] flex">
             <button data-carousel-prev class="p-5 relative top-0 left-0 z-30">

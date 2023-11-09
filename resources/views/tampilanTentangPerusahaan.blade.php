@@ -300,7 +300,7 @@ Abdalla Aboelnaga" />
                 and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
                 1500s,
             </p>
-            <x-carouselWorkingCompanies />
+            <x-carouselWorkingCompanies :dataCompanies="$dataCompanies" />
         </div>
     </div>
 </x-tampilanLayout>

@@ -1,10 +1,10 @@
-<div class="w-[20rem] p-6 bg-white border border-gray-200 rounded-tr-[50px] shadow-[9px_8px_4px_rgba(0,0,0,0.25)] p-2">
+<div class="w-[20rem] h-[26rem] p-6 bg-white border border-gray-200 rounded-tr-[50px] shadow-[9px_8px_4px_rgba(0,0,0,0.25)] p-2">
     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="118" viewBox="0 0 100 118" fill="none">
         <path d="M0 0H80C91.0457 0 100 8.95431 100 20V118H0V0Z" fill="#0062D1"/>
         <path d="M44.65 25C46.0491 25 47.2128 26.0082 47.4541 27.3377L47.5 27.85V44.95C47.5 51.8432 42.6056 57.5932 36.1025 58.9144L36.1 101.95C36.1 103.524 34.824 104.8 33.25 104.8C31.8509 104.8 30.6872 103.792 30.4459 102.462L30.4 101.95L30.4033 58.9156C24.2071 57.6594 19.4701 52.3829 19.033 45.9269L19 44.95V27.85C19 26.276 20.276 25 21.85 25C23.2491 25 24.4128 26.0082 24.6541 27.3377L24.7 27.85V44.95C24.7 48.6733 27.08 51.8408 30.4017 53.0141L30.4 27.85C30.4 26.276 31.676 25 33.25 25C34.6491 25 35.8128 26.0082 36.0541 27.3377L36.1 27.85L36.104 53.0121C39.1674 51.9276 41.4287 49.1465 41.7585 45.7982L41.8 44.95V27.85C41.8 26.276 43.076 25 44.65 25ZM73.15 25C74.5491 25 75.7128 26.0082 75.9541 27.3377L76 27.85V101.95C76 103.524 74.724 104.8 73.15 104.8C71.7509 104.8 70.5872 103.792 70.3459 102.462L70.3 101.95V70.6H61.75C60.3509 70.6 59.1872 69.5918 58.9459 68.2623L58.9 67.75V39.25C58.9 31.3799 65.2799 25 73.15 25ZM70.3 64.9V31.1865C67.2346 32.27 64.9716 35.0518 64.6416 38.4014L64.6 39.25V64.9H70.3Z" fill="white"/>
     </svg>         
     <a href="#">
-        <h5 class="mb-2 mt-2 text-2xl font-bold tracking-tight text-black">Catering 1</h5>
+        <h5 class="mb-2 mt-2 text-2xl font-bold tracking-tight text-black line-clamp-1">{{ $name }}</h5>
     </a>
-    <p class="mb-3 font-thin text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+    <p class="mb-3 font-thin text-black line-clamp-[8]">{{ $description }}</p>
 </div>

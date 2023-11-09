@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="mt-14">
-        <x-carouselService />
+        <x-carouselService :dataService="$dataService" />
     </div>
     <div class="mt-20 w-full h-[870px] bg-cover bg-no-repeat relative bg-[url({{asset('assets/tampilanAssets/ORGANIGRAM.png')}})]">
         <div class="lg:w-[40%] md:w-[70%] sm:w-full flex flex-col ml-16 mr-16 mb-20 text-start">
@@ -22,7 +22,7 @@
             </p>
         </div>
         <div class="justify-items-center">
-            <x-carouselOrganigram />
+            <x-carouselOrganigram :dataOrganigram="$dataOrganigram" />
         </div>
     </div>
 
@@ -34,7 +34,7 @@
                 and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
                 1500s,
             </p>
-            <x-carouselWorkingCompanies />
+            <x-carouselWorkingCompanies :dataCompanies="$dataCompanies" />
 
         </div>
     </div>

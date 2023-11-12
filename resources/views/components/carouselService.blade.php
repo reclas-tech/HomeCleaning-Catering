@@ -1,41 +1,41 @@
 <?php 
-$dataService = [
-    [
-                        'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
-                        'nameTitle' => 'General Cleaning & Housekeeping',
-                        'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
-                    ],
-                    [
-                        'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
-                        'nameTitle' => 'Asu 2',
-                        'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
-                    ],
-                    [
-                        'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
-                        'nameTitle' => 'Asu 3',
-                        'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
-                    ],
-                    [
-                        'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
-                        'nameTitle' => 'Asu 4',
-                        'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
-                    ],
-                    [
-                        'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
-                        'nameTitle' => 'Asu 5',
-                        'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
-                    ],
-                    [
-                        'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
-                        'nameTitle' => 'Asu 6',
-                        'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
-                    ],
-                    [
-                        'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
-                        'nameTitle' => 'Asu 7',
-                        'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
-                    ],
-];
+// $dataService = [
+//     [
+//                         'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
+//                         'nameTitle' => 'General Cleaning & Housekeeping',
+//                         'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
+//                     ],
+//                     [
+//                         'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
+//                         'nameTitle' => 'Asu 2',
+//                         'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
+//                     ],
+//                     [
+//                         'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
+//                         'nameTitle' => 'Asu 3',
+//                         'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
+//                     ],
+//                     [
+//                         'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
+//                         'nameTitle' => 'Asu 4',
+//                         'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
+//                     ],
+//                     [
+//                         'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
+//                         'nameTitle' => 'Asu 5',
+//                         'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
+//                     ],
+//                     [
+//                         'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
+//                         'nameTitle' => 'Asu 6',
+//                         'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
+//                     ],
+//                     [
+//                         'logo' => asset('assets/tampilanAssets/homeCleaningService.png'),
+//                         'nameTitle' => 'Asu 7',
+//                         'desk' =>  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the',
+//                     ],
+// ];
 ?>
 
 <div class="grid grid-cols-1">

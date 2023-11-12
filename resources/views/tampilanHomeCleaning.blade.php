@@ -16,7 +16,7 @@
         </div>
     </div>
     <div class="mt-14">
-        <x-carouselService />
+        <x-carouselService :dataService="$dataService" />
     </div>
     <div
         class="mt-20 w-full h-[870px] bg-cover bg-no-repeat relative bg-[url({{asset('assets/tampilanAssets/ORGANIGRAM.png')}})]">
@@ -28,7 +28,7 @@
             </p>
         </div>
         <div class="justify-items-center">
-            <x-carouselOrganigram />
+            <x-carouselOrganigram :dataOrganigram="$dataOrganigram" />
         </div>
     </div>
 
@@ -40,7 +40,8 @@
                 Perusahaan yang
                 Bekerjasama dengan Home Cleaning dan Catering
             </p>
-            <x-carouselWorkingCompanies />
+            <x-carouselWorkingCompanies :dataCompanies="$dataCompanies" />
+
         </div>
     </div>
 </x-tampilanLayout>

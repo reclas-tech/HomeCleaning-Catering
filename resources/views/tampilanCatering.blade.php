@@ -10,11 +10,11 @@
             </p>
         </div>
             <div class="flex flex-wrap gap-10 mt-4 w-[85%] justify-center items-center">
-                <x-cateringCard />
-                <x-cateringCard />
-                <x-cateringCard />
-                <x-cateringCard />
-                <x-cateringCard />
+                @if (count($dataCatering) > 0)
+                    @foreach ($dataCatering as $item)
+                        <x-cateringCard :name="$item['name']" :description="$item['description']" />
+                    @endforeach
+                @endif
             </div>
     </div>
 
@@ -26,30 +26,17 @@
         </div>
         <div class="flex md:flex-col w-full">
             <div class="flex w-full flex-col md:flex-row gap-4 flex-wrap items-center justify-center">
+
+                @if (count($dataPhotoGalery) > 0)
+
+                @foreach ($dataPhotoGalery as $item) 
                 <div
-                    class=" w-[15rem] hover:md:w-[28rem] hover:md:h-[23rem] hover:w-[18rem] hover:h-[16rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
+                    class=" w-[15rem] hover:md:w-[28rem] hover:md:h-[23rem] hover:w-[18rem] hover:h-[16rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{ $item['logo'] }})] bg-cover rounded-lg ease-in-out duration-100">
                     .
                 </div>
-                <div
-                    class=" w-[15rem] hover:md:w-[28rem] hover:md:h-[23rem] hover:w-[18rem] hover:h-[16rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-                <div
-                    class=" w-[15rem] hover:md:w-[28rem] hover:md:h-[23rem] hover:w-[18rem] hover:h-[16rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-                <div
-                    class=" w-[15rem] hover:md:w-[28rem] hover:md:h-[23rem] hover:w-[18rem] hover:h-[16rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-                <div
-                    class=" w-[15rem] hover:md:w-[28rem] hover:md:h-[23rem] hover:w-[18rem] hover:h-[16rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
-                <div
-                    class=" w-[15rem] hover:md:w-[28rem] hover:md:h-[23rem] hover:w-[18rem] hover:h-[16rem] h-[13rem] md:w-[25rem] md:h-[20rem] bg-cover bg-[url({{asset('assets/tampilanAssets/dummyfood1.png')}})] bg-cover rounded-lg">
-                    .
-                </div>
+                @endforeach
+
+                @endif
             </div>
         </div>
     </div>
@@ -62,7 +49,7 @@
                 and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
                 1500s,
             </p>
-            <x-carouselWorkingCompanies />
+            <x-carouselWorkingCompanies :dataCompanies="$dataCompanies" />
         </div>
     </div>
 </x-tampilanLayout>

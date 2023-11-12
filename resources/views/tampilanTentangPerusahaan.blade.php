@@ -237,7 +237,7 @@ Abdalla Aboelnaga" />
 
 
             </p>
-            <x-carouselWorkingCompanies />
+            <x-carouselWorkingCompanies :dataCompanies="$dataCompanies" />
         </div>
     </div>
 </x-tampilanLayout>

@@ -7,7 +7,7 @@
         </svg>
      </button>
       <div class="flex items-center">
-          <span class="self-center lg:text-2xl sm:text-s font-semibold whitespace-nowrap dark:text-white">Nama Perusahaan</span>
+          <span class="self-center lg:text-2xl sm:text-s font-semibold whitespace-nowrap dark:text-white">PT. ELYNAZ INDOMASR GLOBAL</span>
       </div>
       <div class="flex lg:py-2 lg:px-5">
         <img class="" src={{ asset('assets/cmsAssets/defaultAvatar.svg') }} alt="">

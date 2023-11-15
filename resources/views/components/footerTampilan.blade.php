@@ -36,7 +36,7 @@
                     aria-current="page">About Us</a>
             </li>
             <li>
-                <a href="/contact" class="font-thin text-[0.50rem] md:text-base text-gray-900 text-white"
+                <a href="/kontak" class="font-thin text-[0.50rem] md:text-base text-gray-900 text-white"
                     aria-current="page">Contact</a>
             </li>
         </ul>

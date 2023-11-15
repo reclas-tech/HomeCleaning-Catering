@@ -3,7 +3,7 @@
         desc="PT. ElyNaz IndoMasr Global memberikan solusi layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda."
         ref="#section2" imgPath="{{ asset('assets/tampilanAssets/bgTentangPerusahaan.png') }}" butTitle="Explore Now" />
     <x-humberger refWA="https://api.whatsapp.com/send/?phone=Hp082373377203
-&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/elynazindomasr/" />
+&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/sweepmop/" />
     <!-- Mobile -->
     <div class="md:hidden">
         <div class="justify-center items-start bg-[#EEEFF4] pt-10">
@@ -93,17 +93,6 @@
             <div class="w-0.5 h-[39px] bg-black"></div>
             <div class="w-full max-w-sm border rounded-lg shadow border-black">
                 <div class="flex flex-col items-center p-5 bg-[#001BB0] rounded-t-lg">
-                    <img class="w-36 h-36 rounded-full shadow-lg" src="assets/tampilanAssets/ceisaProfile.png"
-                        alt="Ceisa Shadrina Pranindira, S.E" />
-                </div>
-                <div class="text-center">
-                    <h5 class="mb-1 text-md font-medium text-[#000000]">Ceisa Shadrina <br> Pranindira, S.E</h5>
-                    <span class="text-sm text-[#000000]">Marketing Manager</span>
-                </div>
-            </div>
-            <div class="w-0.5 h-[39px] bg-black"></div>
-            <div class="w-full max-w-sm border rounded-lg shadow border-black">
-                <div class="flex flex-col items-center p-5 bg-[#001BB0] rounded-t-lg">
                     <img class="w-36 h-36 rounded-full shadow-lg" src="assets/tampilanAssets/waelProfile.png" alt="Wael Shoukry Ahmed
 Abdalla Aboelnaga" />
                 </div>
@@ -111,6 +100,16 @@ Abdalla Aboelnaga" />
                     <h5 class="mb-1 text-md font-medium text-[#000000]">Wael Shoukry Ahmed <br />
                         Abdalla Aboelnaga</h5>
                     <span class="text-sm text-[#000000]">Direktur Usaha</span>
+                </div>
+            </div>
+            <div class="w-full max-w-sm border rounded-lg shadow border-black">
+                <div class="flex flex-col items-center p-5 bg-[#001BB0] rounded-t-lg">
+                    <img class="w-36 h-36 rounded-full shadow-lg" src="assets/tampilanAssets/ceisaProfile.png"
+                        alt="Ceisa Shadrina Pranindira, S.E" />
+                </div>
+                <div class="text-center">
+                    <h5 class="mb-1 text-md font-medium text-[#000000]">Ceisa Shadrina <br> Pranindira, S.E</h5>
+                    <span class="text-sm text-[#000000]">Marketing Manager</span>
                 </div>
             </div>
         </div>
@@ -207,17 +206,6 @@ Abdalla Aboelnaga" />
             <div class="w-0.5 h-[39px] bg-black"></div>
             <div class="w-full max-w-sm border rounded-lg shadow border-black">
                 <div class="flex flex-col items-center p-5 bg-[#001BB0] rounded-t-lg">
-                    <img class="w-36 h-36 rounded-full shadow-lg" src="assets/tampilanAssets/ceisaProfile.png"
-                        alt="Ceisa Shadrina Pranindira, S.E" />
-                </div>
-                <div class="text-center">
-                    <h5 class="mb-1 text-xl font-medium text-[#000000]">Ceisa Shadrina Pranindira, S.E</h5>
-                    <span class="text-sm text-[#000000]">Marketing Manager</span>
-                </div>
-            </div>
-            <div class="w-0.5 h-[39px] bg-black"></div>
-            <div class="w-full max-w-sm border rounded-lg shadow border-black">
-                <div class="flex flex-col items-center p-5 bg-[#001BB0] rounded-t-lg">
                     <img class="w-36 h-36 rounded-full shadow-lg" src="assets/tampilanAssets/waelProfile.png" alt="Wael Shoukry Ahmed
 Abdalla Aboelnaga" />
                 </div>
@@ -225,6 +213,17 @@ Abdalla Aboelnaga" />
                     <h5 class="mb-1 text-xl font-medium text-[#000000]">Wael Shoukry Ahmed <br />
                         Abdalla Aboelnaga</h5>
                     <span class="text-sm text-[#000000]">Direktur Usaha</span>
+                </div>
+            </div>
+            <div class="w-0.5 h-[39px] bg-black"></div>
+            <div class="w-full max-w-sm border rounded-lg shadow border-black">
+                <div class="flex flex-col items-center p-5 bg-[#001BB0] rounded-t-lg">
+                    <img class="w-36 h-36 rounded-full shadow-lg" src="assets/tampilanAssets/ceisaProfile.png"
+                        alt="Ceisa Shadrina Pranindira, S.E" />
+                </div>
+                <div class="text-center">
+                    <h5 class="mb-1 text-xl font-medium text-[#000000]">Ceisa Shadrina Pranindira, S.E</h5>
+                    <span class="text-sm text-[#000000]">Marketing Manager</span>
                 </div>
             </div>
         </div>

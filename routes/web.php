@@ -9,6 +9,7 @@ use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ViewController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -102,4 +103,12 @@ Route::controller(ViewController::class) -> group(function () {
     Route::get('/catering', 'catering');
     Route::get('/tentang', 'about');
     Route::get('/kontak', 'contact');
+});
+
+Route::get('public', function () {
+    return redirect('/');
+});
+
+Route::get('link-storage', function () {
+    Artisan::call('storage:link');
 });

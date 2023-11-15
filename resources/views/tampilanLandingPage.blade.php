@@ -2,8 +2,7 @@
     <x-heroTampilan title="PT. ElyNaz IndoMasr Global "
         desc="PT. ElyNaz IndoMasr Global memberikan solusi layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda."
         ref="#section2" imgPath="{{asset('assets/tampilanAssets/firstHome.png')}}" butTitle="Explore Now" />
-    <x-humberger refWA="https://api.whatsapp.com/send/?phone=Hp082373377203
-&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/sweepmop/" />
+    <x-humberger refWA="https://api.whatsapp.com/send/?phone=082373377203&text&type=phone_number&app_absent=0" refInstagram="https://www.instagram.com/sweepmop/" />
     <div id="section2" class="flex gap-y-5 md:gap-y-0 flex-col md:flex-row justify-between items-center min-h-screen md:px-10">
         <div class="max-w-sm p-6 sm:mb-4">
             <h5 class="mb-2 text-5xl font-bold tracking-tight text-black">PRODUK <br> DAN LAYANAN</h5>
@@ -20,7 +19,7 @@
                     pembersihan Hunian, Kantor, Hotel, Rumah Sakit, Pabrik, Asrama, Sekolah, baik pembersihan harian
                     maupun perawatan berkala hingga pelayanan kebersihan khusus bagi industri tertentu</p>
                 <div class="flex justify-end">
-                    <x-cmsButton ref="/" color="#FA8F21" width="36" title="Lihat Selengkapnya"
+                    <x-cmsButton ref="/cleaning" color="#FA8F21" width="36" title="Lihat Selengkapnya"
                         extendClass="text-white text-center mt-6 " />
                 </div>
             </div>
@@ -35,7 +34,7 @@
                     jual yang tertinggi dan mempunyai misi memberikan layanan prima kepada seluruh pelanggan, memberikan
                     produk dan cita rasa yang berkualitas, mengutamakan kualitas, kebersihan dan kerapihan.</p>
                 <div class="flex justify-end">
-                    <x-cmsButton ref="/" color="#FA8F21" width="36" title="Lihat Selengkapnya"
+                    <x-cmsButton ref="/catering" color="#FA8F21" width="36" title="Lihat Selengkapnya"
                         extendClass="text-white text-center mt-6 " />
                 </div>
             </div>

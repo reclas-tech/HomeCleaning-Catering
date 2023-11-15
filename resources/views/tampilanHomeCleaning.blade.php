@@ -1,6 +1,6 @@
 <x-tampilanLayout>
-    <x-heroTampilan title="PT. ElyNaz IndoMasr Global "
-        desc="PT. ElyNaz IndoMasr Global memberikan solusi layanan komprehensif yang disesuaikan dengan kinerja dan kebutuhan bisnis anda."
+    <x-heroTampilan title="SWEEPMOP"
+        desc="Pilihan pembersihan yang beragam dapat disesuaikan dengan kebutuhan para pelanggan Sweepmop mulai dari pembersihan Hunian, Kantor, Hotel, Rumah Sakit, Pabrik, Asrama, Sekolah, baik pembersihan harian maupun perawatan berkala hingga pelayanan kebersihan khusus bagi industri tertentu"
         ref="#section2" imgPath="{{asset('assets/tampilanAssets/cleaningBackground.png')}}" butTitle="Explore Now" />
     <x-humberger refWA="https://api.whatsapp.com/send/?phone=081539274249&text&type=phone_number&app_absent=0"
         refInstagram="https://www.instagram.com/sweepmop/" />
@@ -37,8 +37,8 @@
             <h1 class="lg:text-5xl md:text-4xl sm:text-3xl font-bold text-white text-center">WORKING COMPANIES</h1>
             <p
                 class="text-sm md:text-base font-thin text-white text-justify md:text-center mt-4 m-2 md:m-8 pl-0 md:pl-24 md:pr-24">
-                Perusahaan yang
-                Bekerjasama dengan Home Cleaning dan Catering
+                Berikut Merupakan Perusahaan yang
+                Bekerjasama dengan PT. Elynaz Indomasr Global 
             </p>
             <x-carouselWorkingCompanies :dataCompanies="$dataCompanies" />
 

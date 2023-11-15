@@ -66,7 +66,7 @@
 
 <!-- Komputer -->
 <div class="hidden lg:block">
-    <div class="top-0 right-0 z-50 fixed mt-[30%] drop-shadow-xl">
+    <div class="top-0 right-0 z-50 fixed mt-[25%] drop-shadow-xl">
         <div class="">
             <div class="flex md:order-2">
                 <button type="button top-4 right-4 md:relative md:order-2"

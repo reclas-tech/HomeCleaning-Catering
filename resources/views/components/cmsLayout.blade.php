@@ -18,8 +18,13 @@
       }
     }
     </script>
+    <x-alertDataEditedSuccessfully />
+    <x-alertDataEnteredSuccessfully />
+    <x-alertInputRequired />
+    <x-alertSuccessLogin />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
     <title>Dashboard</title>
+    <link rel="shortcut icon" href="{{ asset('assets/logoelynaz.png') }}" type="image/x-icon">
 </head>
 <body>
     <x-side-bar/>
@@ -29,6 +34,7 @@
           {{ $slot }}
         </div>
     </div>
+    <div id="modalContainer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 </body>
 </html>

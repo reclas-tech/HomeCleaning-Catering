@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Create New Password</title>
+    <link rel="shortcut icon" href="{{ asset('assets/logoelynaz.png') }}" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <x-alertInputRequired />
@@ -47,38 +48,6 @@
                 eyeCloseIcon2.style.display = "none";
             }
         }
-
-        // handle Form submission
-        function handleSignIn() {
-            var newPasswordInput = document.getElementById("newPassword");
-            var newPassword = newPasswordInput.value;
-            var reEnterNewPasswordInput = document.getElementById("reEnterNewPassword");
-            var reEnterNewPassword = reEnterNewPasswordInput.value;
-
-            if (newPassword === "" && reEnterNewPassword === "") {
-                alertInputRequired();
-                return;
-            }
-            if (newPassword === "" && reEnterNewPassword !== "") {
-                alertEnterNewPassword();
-                return;
-            }
-            if (newPassword !== "" && reEnterNewPassword === "") {
-                alertReEnterNewPassword();
-                return;
-            }
-            if (newPassword !== reEnterNewPassword) {
-                alertInputRequired();
-                return;
-            }
-            if (newPassword === "admin" && reEnterNewPassword === "admin") {
-                alertPasswordChangeSuccessfuly();
-                return;
-            }
-            console.log("newPassword:", newPassword);
-            console.log("reEnterNewPassword:", reEnterNewPassword);
-        }
-
     </script>
     <style>
         body {
@@ -154,7 +123,10 @@
 
     <div class="m-0 box-border flex h-screen w-full bg-slate-500 p-0">
         <div class="left w-1/2 flex-col justify-between bg-[#0062D1] h-full flex">
-            <div class="m-auto flex w-2/4 flex-col">
+            <form action="{{ url('/createNewPassword') }}" method="POST" class="m-auto flex w-2/4 flex-col">
+                @csrf
+                <input type="hidden" name="email" value="{{ $email }}">
+                <input type="hidden" name="otp" value="{{ $otp }}">
                 <div class="heading mb-[29px] text-center text-white">
                     <p class="text-2xl">CREATE NEW PASSWORD</p>
                     <div class="mt-[16px]">
@@ -168,10 +140,10 @@
                                 Enter New Password
                             </span>
                             <div class="password-container">
-                                <input type="password" name="newPassword" id="newPassword"
+                                <input type="password" name="password" id="newPassword"
                                     class="h-[47px] px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-                                    placeholder="*********" />
-                                <button class="eye-icon" id="eye-open1" onclick="toggleNewPasswordVisibility('open')">
+                                    placeholder="*********" oninvalid="this.setCustomValidity('Input your password at least 6 character'); alertEnterNewPassword()" oninput="this.setCustomValidity('')" minlength="6" required />
+                                <button type="button" class="eye-icon" id="eye-open1" onclick="toggleNewPasswordVisibility('open')">
                                     <svg id="eye-open1" width="1em" height="1em" viewBox="0 0 16 16"
                                         class="bi bi-eye-fill cursor-pointer text-[#8F8F8F]" fill="currentColor"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -180,7 +152,7 @@
                                             d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
                                     </svg>
                                 </button>
-                                <button class="eye-icon" id="eye-close1" onclick="toggleNewPasswordVisibility('close')">
+                                <button type="button" class="eye-icon" id="eye-close1" onclick="toggleNewPasswordVisibility('close')">
                                     <svg id="eye-icon" width="1em" height="1em" viewBox="0 0 16 16"
                                         class="bi bi-eye-fill text-[#8F8F8F]" fill="currentColor"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -200,10 +172,10 @@
                                 Re-enter New Password
                             </span>
                             <div class="password-container">
-                                <input type="password" name="reEnterNewPassword" id="reEnterNewPassword"
+                                <input type="password" name="password_confirmation" id="reEnterNewPassword"
                                     class="h-[47px] px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-                                    placeholder="*********" />
-                                <button class="eye-icon" id="eye-open2" onclick="toggleReNewPasswordVisibility('open')">
+                                    placeholder="*********" oninvalid="this.setCustomValidity('Input password confirmation'); alertReEnterNewPassword()" oninput="this.setCustomValidity('')" minlength="6" required />
+                                <button type="button" class="eye-icon" id="eye-open2" onclick="toggleReNewPasswordVisibility('open')">
                                     <svg id="eye-open" width="1em" height="1em" viewBox="0 0 16 16"
                                         class="bi bi-eye-fill cursor-pointer text-[#8F8F8F]" fill="currentColor"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -212,7 +184,7 @@
                                             d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
                                     </svg>
                                 </button>
-                                <button class="eye-icon" id="eye-close2"
+                                <button type="button" class="eye-icon" id="eye-close2"
                                     onclick="toggleReNewPasswordVisibility('close')">
                                     <svg id="eye-icon" width="1em" height="1em" viewBox="0 0 16 16"
                                         class="bi bi-eye-fill text-[#8F8F8F]" fill="currentColor"
@@ -228,24 +200,32 @@
                         </label>
                     </div>
                 </div>
-                <button type="button" id="signIn"
-                    class="w-full h-[52px] text-base text-white bg-[#FA8F21] hover:bg-[#D87815] focus:ring-4 focus:ring-blue-300 px-5 py-2.5 mr-2 mb-2 dark:bg-[#FA8F21] dark:hover:bg-[#D87815] rounded transition duration-300"
-                    onclick="handleSignIn()">Change Password</button>
-            </div>
+                <button type="submit" id="signIn"
+                    class="w-full h-[52px] text-base text-white bg-[#FA8F21] hover:bg-[#D87815] focus:ring-4 focus:ring-blue-300 px-5 py-2.5 mr-2 mb-2 dark:bg-[#FA8F21] dark:hover:bg-[#D87815] rounded transition duration-300">Change Password</button>
+            </form>
         </div>
         <x-cmsBgLogin />
     </div>
+
+    @if (session()->has('successCheckOTP'))
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                alertEnterNewPassword();
+            });
+        </script>
+    @endif
+
+    @if (session()->has('failedCreateNewPassword'))
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                alertPasswordNotFound();
+            });
+        </script>
+    @endif
+
     <!-- Custom Modal Container -->
     <div id="modalContainer"></div>
 
-    <script>
-        const signIn = document.getElementById("signIn");
-
-        signIn.addEventListener("click", () => {
-            window.location.href = "loginPage";
-        });
-
-    </script>
 </body>
 
 </html>

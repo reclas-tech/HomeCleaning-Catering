@@ -12,4 +12,13 @@
                 img="companyLogo" />
         </div>
     </div>
+
+    @if (session() -> has('successLogin'))
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                alertSuccessLogin();
+            });
+        </script>
+    @endif
+
 </x-cmsLayout>

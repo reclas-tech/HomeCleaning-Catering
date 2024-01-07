@@ -1,4 +1,11 @@
 <x-cmsLayout>
     <h1 class="text-3xl font-semibold p-2 mt-2">Home Cleaning Organigram</h1>
-    <x-cmsTable :top="['Name','Position']" exception="id" addRef="/cmsOrganigramAdd"/>
+    <x-cmsTable :top="['Name','Position']" :test="$test" :allPage="$data -> lastPage()" :currentPage="$data -> currentPage()" :prevPage="$data -> previousPageUrl()" :nextPage="$data -> nextPageUrl()" exception="id" addRef="/cmsOrganigramAdd" :search="$varSearch" />
+    @if (session()->has('successAddContent'))
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                alertDataEnteredSuccessfully();
+            });
+        </script>
+    @endif
 </x-cmsLayout>

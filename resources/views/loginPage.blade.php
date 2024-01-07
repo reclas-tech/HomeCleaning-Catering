@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login Page</title>
+    <link rel="shortcut icon" href="{{ asset('assets/logoelynaz.png') }}" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <x-alertInputRequired />
@@ -17,6 +18,7 @@
     <x-alertOTPCodeHasBeenSent />
     <x-alertEnterOTPCode />
     <x-alertEnterNewPassword />
+    <x-alertLogout />
     <script>
         // fungtion lain
         function togglePasswordVisibility(action) {
@@ -32,28 +34,6 @@
                 eyeOpenIcon.style.display = "block";
                 eyeCloseIcon.style.display = "none";
             }
-        }
-
-        // handle Form submission
-        function handleSignIn() {
-            var emailInput = document.getElementById("email");
-            var passwordInput = document.getElementById("password");
-            var email = emailInput.value;
-            var password = passwordInput.value;
-            if (email === "" && password === "") {
-                alertModalEmailPasswordWrong();
-                return;
-            }
-            if (email === "" && password !== "" || password === "" && email !== "") {
-                alertWrongEmailPassword();
-                return;
-            }
-            if (password === "admin" && email === "admin") {
-                alertSuccessLogin();
-                return;;
-            }
-            console.log("Email:", email);
-            console.log("Password:", password);
         }
 
     </script>
@@ -130,7 +110,8 @@
 <body class="antialiased">
 
     <div class="m-0 box-border flex h-screen w-full bg-slate-500 p-0">
-        <div class="left w-1/2 flex-col justify-between bg-[#0062D1] h-full flex">
+        <form action="{{ url('/login') }}" method="POST" class="left w-1/2 flex-col justify-between bg-[#0062D1] h-full flex">
+            @csrf
             <div class="m-auto flex w-2/4 flex-col">
                 <div class="heading mb-[29px] text-center text-white">
                     <p class="text-3xl">LOGIN CMS PANEL</p>
@@ -146,7 +127,7 @@
                             </span>
                             <input type="email" id="email" name="email"
                                 class="h-[47px] px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-                                placeholder="example@company.com" />
+                                placeholder="example@company.com" oninvalid="this.setCustomValidity('Input your email address'); alertInputRequired()" oninput="this.setCustomValidity('')" maxlength="255" value="{{ old('email') }}" required />
                         </label>
                     </div>
                     <div class="mb-[20px]">
@@ -157,8 +138,8 @@
                             <div class="password-container">
                                 <input type="password" name="password" id="password"
                                     class="h-[47px] px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-                                    placeholder="*********" />
-                                <button class="eye-icon" id="eye-open" onclick="togglePasswordVisibility('open')">
+                                    placeholder="*********" oninvalid="this.setCustomValidity('Input your password, at least 6 character'); alertInputRequired()" oninput="this.setCustomValidity('')" minLength="6" maxlength="255" required />
+                                <button type="button" class="eye-icon" id="eye-open" onclick="togglePasswordVisibility('open')">
                                     <svg id="eye-open" width="1em" height="1em" viewBox="0 0 16 16"
                                         class="bi bi-eye-fill cursor-pointer text-[#8F8F8F]" fill="currentColor"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -167,7 +148,7 @@
                                             d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
                                     </svg>
                                 </button>
-                                <button class="eye-icon" id="eye-close" onclick="togglePasswordVisibility('close')">
+                                <button type="button" class="eye-icon" id="eye-close" onclick="togglePasswordVisibility('close')">
                                     <svg id="eye-icon" width="1em" height="1em" viewBox="0 0 16 16"
                                         class="bi bi-eye-fill text-[#8F8F8F]" fill="currentColor"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -187,24 +168,40 @@
                         <div class="text-white text-base">Forgot password</div>
                     </a>
                 </div>
-                <button type="button" id="signIn"
-                    class="w-full h-[52px] text-base text-white bg-[#FA8F21] hover:bg-[#D87815] focus:ring-4 focus:ring-blue-300 px-5 py-2.5 mr-2 mb-2 dark:bg-[#FA8F21] dark:hover:bg-[#D87815] rounded transition duration-300"
-                    onclick="handleSignIn()">Sign In</button>
+                <button type="submit" id="signIn"
+                    class="w-full h-[52px] text-base text-white bg-[#FA8F21] hover:bg-[#D87815] focus:ring-4 focus:ring-blue-300 px-5 py-2.5 mr-2 mb-2 dark:bg-[#FA8F21] dark:hover:bg-[#D87815] rounded transition duration-300">Sign In</button>
             </div>
-        </div>
+        </form>
         <x-cmsBgLogin />
     </div>
+
+    @if (session()->has('failedLogin'))
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                alertModalEmailPasswordWrong();
+            });
+        </script>
+    @endif
+
+    @if (session()->has('successLogout'))
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                alertLogout();
+            });
+        </script>
+    @endif
+
+    @if (session()->has('successCreateNewPassword'))
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                alertPasswordChangeSuccessfuly();
+            });
+        </script>
+    @endif
+
     <!-- Custom Modal Container -->
     <div id="modalContainer"></div>
     <img src={asset=({path})} alt="">
-    <script>
-        const signIn = document.getElementById("signIn");
-
-        signIn.addEventListener("click", () => {
-            window.location.href = "cmsDashboard";
-        });
-
-    </script>
 </body>
 
 </html>
